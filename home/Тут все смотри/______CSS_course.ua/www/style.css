@@ -1,0 +1,16 @@
+body {
+	background-color: #FF8C00;
+	color: red;
+	background:  url("127_0.jpg") no-repeat;
+
+}
+
+h1 {
+		font-size: 2em;
+		background-color: RGB(249, 201, 16);  /* Цвет фона под заголовком */
+		text-align: justify; /* Выравнивание по ширине */
+}
+h2 {
+		font-size: 3em;
+}
+
