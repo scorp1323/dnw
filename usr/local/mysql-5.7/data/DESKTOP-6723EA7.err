@@ -1,0 +1,56 @@
+2019-05-10T09:11:25.435731Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2019-05-10T09:11:25.472019Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2019-05-10T09:11:25.489002Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2019-05-10T09:11:25.489002Z 0 [Note] Z:\usr\local\mysql-5.7\bin\mysqld.exe (mysqld 5.7.15) starting as process 868 ...
+2019-05-10T13:09:04.439977Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2019-05-10T13:09:04.439977Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2019-05-10T13:09:04.440977Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2019-05-10T13:09:04.440977Z 0 [Note] Z:\usr\local\mysql-5.7\bin\mysqld.exe (mysqld 5.7.15) starting as process 10180 ...
+2019-05-11T06:03:25.699614Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2019-05-11T06:03:25.699614Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2019-05-11T06:03:25.700654Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2019-05-11T06:03:25.700654Z 0 [Note] Z:\usr\local\mysql-5.7\bin\mysqld.exe (mysqld 5.7.15) starting as process 7988 ...
+2019-05-14T07:08:54.046896Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2019-05-14T07:08:54.073403Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2019-05-14T07:08:54.120593Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2019-05-14T07:08:54.120593Z 0 [Note] Z:\usr\local\mysql-5.7\bin\mysqld.exe (mysqld 5.7.15) starting as process 3016 ...
+2019-05-14T07:11:30.996110Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2019-05-14T07:11:30.997110Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2019-05-14T07:11:30.998111Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2019-05-14T07:11:30.998111Z 0 [Note] Z:\usr\local\mysql-5.7\bin\mysqld.exe (mysqld 5.7.15) starting as process 4428 ...
+2019-05-15T09:18:06.026303Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2019-05-15T09:18:06.036283Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2019-05-15T09:18:06.071556Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2019-05-15T09:18:06.071556Z 0 [Note] Z:\usr\local\mysql-5.7\bin\mysqld.exe (mysqld 5.7.15) starting as process 9760 ...
+2019-05-15T13:12:18.432212Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2019-05-15T13:12:18.432212Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2019-05-15T13:12:18.433210Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2019-05-15T13:12:18.433210Z 0 [Note] Z:\usr\local\mysql-5.7\bin\mysqld.exe (mysqld 5.7.15) starting as process 12224 ...
+2019-05-18T09:40:00.946180Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2019-05-18T09:40:00.961203Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2019-05-18T09:40:00.963200Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2019-05-18T09:40:00.963200Z 0 [Note] Z:\usr\local\mysql-5.7\bin\mysqld.exe (mysqld 5.7.15) starting as process 5784 ...
+2019-07-13T09:13:40.451979Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2019-07-13T09:13:40.491029Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2019-07-13T09:13:40.503026Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2019-07-13T09:13:40.503026Z 0 [Note] \usr\local\mysql-5.7\bin\mysqld.exe (mysqld 5.7.15) starting as process 11516 ...
+2019-07-13T09:16:43.493994Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2019-07-13T09:16:43.493994Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2019-07-13T09:16:43.494993Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2019-07-13T09:16:43.494993Z 0 [Note] \usr\local\mysql-5.7\bin\mysqld.exe (mysqld 5.7.15) starting as process 9388 ...
+2019-07-13T09:17:20.114086Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2019-07-13T09:17:20.114086Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2019-07-13T09:17:20.114086Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2019-07-13T09:17:20.114086Z 0 [Note] \usr\local\mysql-5.7\bin\mysqld.exe (mysqld 5.7.15) starting as process 9748 ...
+2019-07-13T09:18:53.572877Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2019-07-13T09:18:53.573876Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2019-07-13T09:18:53.573876Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2019-07-13T09:18:53.573876Z 0 [Note] \usr\local\mysql-5.7\bin\mysqld.exe (mysqld 5.7.15) starting as process 8528 ...
+2019-07-22T06:43:24.186513Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2019-07-22T06:43:24.317433Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2019-07-22T06:43:24.430359Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2019-07-22T06:43:24.430359Z 0 [Note] \usr\local\mysql-5.7\bin\mysqld.exe (mysqld 5.7.15) starting as process 4576 ...
+2019-07-22T14:16:31.321666Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2019-07-22T14:16:31.321666Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2019-07-22T14:16:31.330659Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2019-07-22T14:16:31.330659Z 0 [Note] \usr\local\mysql-5.7\bin\mysqld.exe (mysqld 5.7.15) starting as process 7140 ...

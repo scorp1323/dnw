@@ -1,0 +1,76 @@
+# Убрать папку node_modules, но оставить в ней 2 подпапки jquery и semantic
+# решение
+# /vendor/node_modules/*
+# !/vendor/node_modules/jquery/
+# !/vendor/node_modules/semantic/
+
+
+#Убрать папку node_modules, но оставить в её подпапке jquery подпапку dist
+#решение
+# /vendor/node_modules/*
+# /vendor/node_modules/jquery/*
+# !/vendor/node_modules/jquery/
+# !/vendor/node_modules/jquery/dist/
+
+
+# Как игнорировать файлы, которые уже отслеживаются?
+# Если вы добавили файл или папку в .gitignore, после того как они попали в репозиторий, то их необходимо удалить из репозитория командой:
+
+# git rm --cached <file>
+# Например убрать папку storage/framework/cache/. Обратите внимание: вначале отсутствует слеш.
+
+# git rm -r --cached "storage/framework/cache/"
+# =====================================
+# ======================================
+# 
+# То, что работает!!!!!!!
+# /denwer/
+
+# /home/custom/
+# /home/localhost/
+# /home/test1.ru/
+# /home/cgi-glob/
+
+# /usr/*
+# /usr/local/*
+# !/usr/local/
+# !/usr/local/mysql-5.7/
+
+#=======================================
+#=======================================
+
+
+
+# ======================================
+/denwer/
+/home/custom/
+/home/localhost/
+/home/test1.ru/
+/home/cgi-glob/
+
+/usr/bin/
+/usr/sbin/
+
+/usr/local/apache/
+/usr/local/bin/
+/usr/local/miniperl/
+/usr/local/php5/
+/usr/local/sbin/
+/usr/local/vcredist/
+
+/usr/local/mysql-5.7/bin/
+/usr/local/mysql-5.7/share/
+/usr/local/mysql-5.7/COPYING
+/usr/local/mysql-5.7/my.ini
+/usr/local/mysql-5.7/README
+
+/usr/local/mysql-5.7/data/mysql/
+/usr/local/mysql-5.7/data/performance_schema/
+/usr/local/mysql-5.7/data/sys/
+
+
+#=======================================
+
+# /usr/local/mysql-5.7/*
+# /usr/local/mysql-5.7/data/*
+# !/usr/local/mysql-5.7/data/
