@@ -1,0 +1,12 @@
+/*футер*/
+.wrapper7 {
+	background-color: #87CEEB;
+	grid-column: 1 / 4 ;
+	display: grid;
+	align-items: center;
+  justify-content: center;
+
+  
+   /*position:fixed;left:0;bottom:0; right:0; padding:7px;*/ 
+	}
+/*=================================*/

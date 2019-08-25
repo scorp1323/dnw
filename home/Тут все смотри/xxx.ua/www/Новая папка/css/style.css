@@ -1,0 +1,109 @@
+/*@import "horisontell_meny.css";*/
+/*@import url("footer.css");*/
+/*@import "slider.css";*/
+
+body{
+  background: #FFE4E1;
+
+}
+
+
+
+/*===============================*/
+/*ФОРМА ЗАКАЗА ЗВОНКА*/
+
+/*Поля ИМЯ и ТЕЛЕФОН*/
+.с_3 {
+  display: inline-block;
+  width: 200px;
+  font-size: 100%;
+  /*  text-shadow: #2e7ebd 0 1px 2px; */
+  font-weight:bold; /*  жирный текст */
+  text-decoration: none;  /* размер шрифта, в частности, определяющий высоту букв. */
+  text-align: center;
+  line-height: 1.0;  /* высота строки */
+  white-space: pre-line;
+  padding: .4em 0;
+  border: px solid;
+  border-color: #60a3d8 #2970a9 #2970a9 #60a3d8;
+  border-radius: 6px;
+  outline: none;
+  background: #FFFFFF ;
+  box-shadow: inset rgba(255,255,255,.5) 1px 1px;
+}
+/*Зона ввода текста*/
+.textarea_1 {
+resize: none;
+width: 200px;
+height: 80px;
+background: #FFFFFF;
+}
+
+/*Кнопка СБРОСС*/
+#a_1 {
+  display: inline-block;
+  width: 5em;
+  font-size: 100%;
+  color: rgba(255,255,255,.9);
+  text-shadow: #2e7ebd 0 1px 2px;
+  font-weight:bold; /*  жирный текст */
+  text-decoration: none;  /* размер шрифта-определяет высоту букв. */
+  text-align: center;
+  line-height: 1.0;  /* высота строки */
+  white-space: pre-line; /* позволяет сохранять пробелы и переносы строк. */
+                         /* pre: - Сохраняет пробелы,Переносит текст при явном разрыве строки */
+  padding: .4em 0;
+  border: 1px solid;
+  border-color: #60a3d8 #2970a9 #2970a9 #60a3d8;
+  border-radius: 6px;
+  outline: none;
+  background: #60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);
+  box-shadow: inset rgba(255,255,255,.5) 1px 1px;
+}
+
+}
+#a_1:hover {
+  color: rgb(255,255,255);
+  background-image: linear-gradient(#9dc7e7, #74afdd 50%, #378bce);
+}
+
+#a_1:active {
+  color: rgb(255,255,255);
+  border-color: #2970a9;
+  background-image: linear-gradient(#5796c8, #6aa2ce);
+  box-shadow: none;
+  }
+
+ /*-------------------*/
+ /*Кнопка ОТПРАВИТЬ */
+ #a_2 {
+ display: inline-block;
+  width: 6em;
+  font-size: 100%;
+  color: rgba(255,255,255,.9);
+  text-shadow: #2e7ebd 0 1px 2px;
+  font-weight:bold;
+  text-decoration: none;  /* размер шрифта, в частности, определяющий высоту букв. */
+  text-align: center;
+  line-height: 1.0;  /* высота строки */
+  white-space: pre-line;
+  padding: .4em 0;
+  border: 1px solid;
+  border-color: #60a3d8 #2970a9 #2970a9 #60a3d8;
+  border-radius: 6px;
+  outline: none;
+  background: #60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);
+  box-shadow: inset rgba(255,255,255,.5) 1px 1px;
+}
+
+}
+ #a_2:hover {
+  color: rgb(255,255,255);
+  background-image: linear-gradient(#9dc7e7, #74afdd 50%, #378bce);
+}
+ #a_2:active {
+  color: rgb(255,255,255);
+  border-color: #2970a9;
+  background-image: linear-gradient(#5796c8, #6aa2ce);
+  box-shadow: none;
+}

@@ -1,0 +1,24 @@
+* {margin: 0; 	/* расстояние вокруг элемента */ 	padding: 0;
+	/* расстояние между границей элемента и его содержимым */ }
+
+.wrapper, .content, .menu, body, html {height: 100%;
+		/* высота элемента */ }
+
+.wrapper {display: flex; }
+/* делаем блок резиновым */
+
+.content {flex: 1; 	background: #fffacd; /* фон (цвет) */ }
+
+
+.block { margin: 40px; 	/* расстояние вокруг элемента */
+	padding: 20px; 	/* расстояние между границей элемента и его содержимым */
+	background: #fff; /* фон (цвет) */
+	border-radius: 8px; /* радиус закругления углов */
+	border: 1px solid #ADB6BA; /* граница - 1px solid=сплошная цветом #ADB6BA */ }
+
+.menu { width: 200px; /* ширина элемента */
+	background: #464e78; /* фон (цвет) */ }
+
+body {
+	background: blue;
+}

@@ -1,0 +1,451 @@
+Первое видео:
+ - https://www.youtube.com/watch?v=TRjX6vRmtOg
+ - второе видео и все остальные https://www.youtube.com/watch?v=3cfEQHm9xd0&index=2&list=PLB8wmVoWIIx5mjsys7htsaF030LEFIFw8
+ 
+ Уроки ДЖАВА https://www.youtube.com/watch?v=T8RqyoaVZD8&list=PLNclrLF8MXOy4-HOn6_YyuDKfzGK1nTl-
+
+
+ ==============================================================
+
+ 	            = ВИДЕО-1 =
+
+1 - Создаем файл .htaccess в корне сайта
+
+
+2 - пишем в .htaccess 2 строчки кода 
+RewriteEngine on # включить перенаправление
+RewriteRule .* index.php [L] # перенаправлять все запросы на index.php
+
+Пишем что-нибудь в файле index.php (например, = Все файлы идут на index.php).
+
+Проверяем, что все запросы теперь идут на index.php - какой адресс в строке запроса не вводи, будет надпись "Все файлы идут на index.php"
+
+
+3 - var_dump($_SERVER);
+#  выводим все данные с глобальной переменной _SERVER
+
+
+4 - с множества данных выбираем  REQUEST_URI 
+
+
+5 - выводим данные с глобальной переменной _SERVER как с массива
+var_dump($_SERVER['REQUEST_URI']);
+
+Проверка - при вводе в поле адреса "что-нибудь"  На выходе - строка, введенная в поле адреса "что-нибудь"
+
+
+6 - удаляем / в начале запроса
+
+substr($_SERVER['REQUEST_URI'], 1) - удаляем 1-й символ у результата - получаем 
+ var_dump(substr($_SERVER['REQUEST_URI'], 1) );
+
+Проверка - при вводе в поле адреса "/что-нибудь"  На выходе - строка, введенная в поле адреса "что-нибудь" (без /)
+ 
+ 
+7 - пишем условие
+		if ($_SERVER['REQUEST_URI'] == '/') $page = 'home';
+#если $_SERVER['REQUEST_URI'] равна точно '/' то $page присвоить 'home'
+else {
+	# иначе
+	$page = substr($_SERVER['REQUEST_URI'], 1) ;
+#если это не главная страница, то $page равно результату substr($_SERVER['REQUEST_URI'], 1) ;
+echo $page;
+#вывести $page 
+
+Проверяем:
+ - если мы на стартовой странице - выводит home,
+	если в запрос вводим что-либо еще - выводит "что-либо еще"
+ 
+ 
+8 - отсеиваем все плохие символы
+if(!preg_match('/^[A-z0-9]{3,15}$/', $page) ) exit('Error url');
+# если не [A-z0-9], и символов не от 3 до 15 - exit('Error url')
+
+
+if ($_SERVER['REQUEST_URI'] == '/') $page = 'home';
+else { 
+	$page = substr($_SERVER['REQUEST_URI'], 1) ;
+	if(!preg_match('/^[A-z0-9]{3,15}$/', $page) ) exit('Error url');
+	echo $page;
+}
+
+
+9 - создаем 3 папки в корне сайта (рядом с index.php)
+  all, auth, guest
+  all - доступна для всех пользователей
+  auth - доступна для всех авторизированных пользователей
+  guest - доступна для гостей
+ 
+ 
+ 11 - делаем проверку на существование:
+if ( file_exists('all/'.$page.'.php') ) include 'all/'.$page.'.php';
+else if ( file_exists('auth/'.$page.'.php') ) include 'auth/'.$page.'.php';
+else if ( file_exists('guest/'.$page.'.php') ) include 'guest/'.$page.'.php';
+else exit('Страница 404');
+
+# если есть файл в папке 'all/' с именем = адресс.php - то его подключаем, 
+иначе если есть файл в папке 'auth/' с именем = адресс.php - то его подключаем,
+иначе если есть файл в папке 'guest/' с именем = адресс.php - то его подключаем,
+иначе ВЫХОД и печать 'Страница 404'
+ 
+ 
+10 - session_start();
+ # стартуем сессию без папаметров (для хранения информации о пользователе)
+
+ 
+11 - пишем условие с использованием сессии 
+
+session_start();
+
+if ( file_exists('all/'.$page.'.php') ) include 'all/'.$page.'.php';
+
+else if ( $_SESSION['ulogin'] == 1 and file_exists('auth/'.$page.'.php') ) include 'auth/'.$page.'.php';
+
+else if ( $_SESSION['ulogin'] != 1 and file_exists('guest/'.$page.'.php') ) include 'guest/'.$page.'.php';
+
+else exit('Страница 404');
+
+# если есть файл в папке 'all/' с именем = адресс.php - то его подключаем, 
+иначе если сессия 'ulogin' = 1 и  есть файл в папке 'auth/' с именем = адресс.php - то его подключаем,
+иначе если если сессия 'ulogin' не = 1 и есть файл в папке 'guest/' с именем = адресс.php - то его подключаем,
+иначе ВЫХОД и печать 'Страница 404'
+
+
+11 - создаем файл info.php в папке 'all/' и пишем в нем 
+'Это файл info.php'
+ - создаем файл panel.php в папке 'auth/' и пишем в нем 
+'Это панель управления - panel.php'
+ - создаем файл login.php в папке 'guest/' и пишем в нем 
+'Форма входа - login.php'
+
+Проверяемся.
+При введении в адресной строке info или login, - попадаем на соответствующие страницы с сообщениями ( Это файл info.php или Форма входа - login.php), а если введем info - попадаем на сообщение 'Страница 404', тат как мы не авторизированы
+
+
+=========================================================
+ВИДЕО № 2
+1 - В корневой папке рядом с index.php создаем файл style.css
+
+
+2 - # в index.php создаем функцию  top с основной частью страницы html, где title заменен на $title и функцию bottom с остальной частью html
+
+function top( $title) {
+echo '<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>'.$title.'</title>
+</head>
+<body> ';  }
+
+function bottom() {
+	'</body>
+</html>' ;  }
+
+
+3 - добавляем стили на html-страницу
+<link rel="stylesheet" href="/style.css">
+
+Получим
+function top( $title) {
+echo '<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>'.$title.'</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body> '; }
+
+Но НИФИГА РАБОТАТЬ НЕ БУДЕТ - ФАЙЛ .htaccess построен не правильно!
+
+ПЕРЕДЕЛЫВАЕМ .htaccess!!
+
+AddDefaultCharset utf-8
+
+RewriteEngine On 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteRule ^(.*)$ index.php?/$1 [L]
+
+
+AddDefaultCharset utf-8 
+# кодировка utf-8
+RewriteEngine On 
+#включить модуль сервера Apache для манипуляции (изменения) UR
+RewriteCond %{REQUEST_FILENAME} !-f 
+# условие, что все существующие папки не будут обрабатываться регулярным выражением
+RewriteCond %{REQUEST_FILENAME} !-d 
+#условие, что все существующие файлы не будут обрабатываться регулярным выражением
+RewriteRule ^(.*)$ index.php?/$1 [L] 
+#регулярное выражение, в нашем случае — при любой строке запроса будет открывать index.php, добавляя её (строку запроса) в $_SERVER['REQUEST_URI'].
+
+
+4 - создаем <div class="wrapper"> - вся страница, внутри которого 2 класса "menu и "content">, внутри класса контент - класс "block"
+
+function top( $title) {
+echo '<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>'.$title.'</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="wrapper">
+<div class="menu">Меню</div>
+<div class="content">Текст
+<div class="block"> ';}
+
+function bottom() {
+	' </div>
+</div>
+</div>
+	</body>
+</html>'; }
+
+
+5 - в файле style.css 
+
+* {margin: 0; 	/* расстояние вокруг элемента */ 	padding: 0;
+	/* расстояние между границей элемента и его содержимым */ }
+
+.wrapper, .content, .menu, body, html {height: 100%;
+		/* высота элемента */ }
+
+.wrapper {display: flex; }
+
+.content {flex: 1; 	background: #fffacd; /* фон (цвет) */ }
+
+
+.block { margin: 40px; 	/* расстояние вокруг элемента */
+	padding: 20px; 	/* расстояние между границей элемента и его содержимым */
+	background: #fff; /* фон (цвет) */
+	border-radius: 8px; /* радиус закругления углов */
+	border: 1px solid #ADB6BA; /* граница - 1px solid=сплошная цветом #ADB6BA */ }
+
+.menu { width: 200px; /* ширина элемента */
+	background: #464e78; /* фон (цвет) */ }
+	
+
+6 - делаем ссылки в блоке menu
+
+<div class="wrapper">
+<div class="menu">
+<a href="/">Главная</a>
+<a href="/login">Вход</a>
+<a href="/register">Регистрация</a>
+</div>
+<div class="content">Текст
+<div class="block">
+
+7 - css для него
+.menu a {
+	display: block;  	/* Блочные элементы начинаются с новой строки и их содержимое растягивается влево и вправо настолько, насколько это возможо. */
+	color: #fff; 	/* цвет текста */
+	margin: 5px 0; 	/* расстояние вокруг элемента */
+	padding: 15px; 	/* расстояние между границей элемента и его содержимым */
+	text-transform: uppercase; 	/* Переводит текст в верхний регистр. */
+	
+8 - убираем подчеркивания в ссылках
+	a {text-decoration: none; /* убираем подчеркивания в ссылках */ }
+	
+=========================================================
+ВИДЕО № 3
+
+1 - меняем шрифт
+заходим на https://fonts.google.com/
+жмем +
+копируем ссылку, которая вылезла
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+вставляем ссылку под ссылкой на css
+<link rel="stylesheet" href="/style.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"></head>
+
+копируем font-family тамже и вставляем в css в body
+
+body, button, input,h1 { 
+	font-family: 'Roboto', sans-serif;  /* типр шрифта */
+	font-size: 16px; /* размер шрифта */
+	
+2 - в файле login.php создаем плейсхолдеры и кнопки
+
+<p><input type="text" placeholder="E-mail" id="email"></p>
+<p><input type="password" placeholder="Пароль" id="password"></p>
+<p><input type="text" placeholder="Столица Украины" id="captcha"></p>
+<p><button>Войти</button><button>Восстановить пароль</button></p>
+
+
+3 - стилизуем кнопки
+
+button {
+	background: #34c0e2; /* фон (цвет) */
+	color: #fff; /*Цвет текста*/;
+	padding: 8px 16px; /* поля вокруг элемента */
+	border-radius: 10px; /* Закругление углов у ыграниц*/
+	outline: none; /* убрать рамочку активации вокруг полей ввода*/
+	margin: 0px 6px 0px 0px; /* отступ от каждого края элемента */
+
+4 - стилизуем инпуты
+input[type=text], input[type=password] {
+	padding: 8px; /* поля вокруг элемента */
+	border: 1px solid #ADB6BA; /* рамка */
+	border-radius: 8px; /* закругляем края рамок */
+	color: #ADB6BA; /* цвет текста внутри */
+	width: 300px; /* ширина элемента */
+	outline: none; /* убрать рамочку активации вокруг полей ввода*/ } 
+	
+5 - делаем отступы для всех P 
+p { margin: 15px 0; /* отступ от каждого края элемента */ }
+
+6 - стилизуем все H1
+h1 { color: #576369; /*Цвет текста*/;
+	font-size: 20px; /* размер шрифта */ }
+	
+7 - в login.php создаем h1
+<h1>Вход</h1>
+
+8 - создаем 3 файла в папке guest/
+	- register.php     - страница регистрации
+	- recovery.php     - страница восстановления
+	- confirm.php      - страница подтверждения
+	
+9 - в файле register пишем
+<?  top('Регистрация'); ?>
+<h1>Регистрация</h1>
+<p><input type="text" placeholder="E-mail" id="email"></p>
+<p><input type="password" placeholder="Пароль" id="password"></p>
+<p><input type="text" placeholder="Столица Украины" id="captcha"></p>
+<p><button>Регистрация</button></p>
+<? bottom() ; ?>
+
+10 - в файле recovery пишем
+<?  top('Восстановление пароля'); ?>
+<h1>Восстановление пароля</h1>
+<p><input type="text" placeholder="E-mail" id="email"></p>
+<p><input type="text" placeholder="Столица Украины" id="captcha"></p>
+<p><button>Восстановить</button></p>
+<? bottom() ; ?>
+
+11 - в файле confirm пишем
+<?  top('Подтверждение'); ?>
+<h1>Подтверждение</h1>
+<p><input type="text" placeholder="Код" id="code"></p>
+<p><input type="text" placeholder="Столица Украины" id="captcha"></p>
+<p><button>Подтвердить</button></p>
+<? bottom() ; ?>
+
+12 - подсветка кнопки и появление укахателя при наведении
+button:hover /* Значение кнопок при наличии курсора над ними */
+	 { cursor: pointer; /* курсор-рука с пальцем */
+	opacity: 0.8; /* прозрачность */ }
+	
+=========================================================
+ВИДЕО № 4
+
+1 - заходим на https://code.jquery.com/
+
+2 - копируем код jQuery 1.x Core 1.12.4 - uncompressed
+ - там есть 
+<script src="https://code.jquery.com/jquery-1.12.4.js"
+integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+  
+  и вставляем в index.php 
+
+3 - в файл index.php добавляем скрипт, который будет работать не всех страницах
+<script src="script.js"></script>
+
+4 - создаем событие OnClick для кнопки в login.php
+, пока бес параметров
+<p><button onclick="post_query()">Войти</button><button>Восстановить пароль</button></p>
+
+5 - создаем функцию post_query в script.php
+function post_query(url, name, data ) {
+alert('Привет, Скрипт!!!');
+alert('Привет, скрипт-2'); }
+
+При нажатии на кнопку Войти на странице login.php - выскакивает 2 подряд сообщения 
+'Привет, Скрипт!!!') и 'Привет, скрипт-2')
+
+6 - корректируем файл login.php - пишем в скобках 
+<button onclick="post_query('test', 'login', 'email.password.captcha')">
+
+6.1 - корректируем файл confirm.php - пишем в скобках 
+<button onclick="post_query('test', 'confirm', 'code.captcha')">
+
+6.2 - корректируем файл register.php - пишем в скобках 
+<button onclick="post_query('test', 'register', 'email.password.captcha')">
+
+7 - корректируем функцию в файле script.js для вывода полученных форм
+function post_query(url, name, data ) {
+	$.each( data.split('.'), function(k, v) {
+		alert(v); } );
+alert('Привет, Скрипт!!!');
+alert('Привет, скрипт-2');
+}
+
+Должен вывести email, password, captcha, Привет, Скрипт, Привет, скрипт-2.
+10.03-видео-4
+
+удаляем лишний alert 
+alert('Привет, Скрипт!!!');
+alert('Привет, скрипт-2');
+
+8 - для получения значений полей, меняем код в функции post_query 
+function post_query(url, name, data ) {
+	$.each( data.split('.'), function(k, v) {
+		alert( $('#' + v).val() ); 	} ); }
+
+Проверка - вводим в поля email, пароль, каптча - нажимаем Войти - поочереди должны высветится данные,  введенные в эти поля
+function post_query(url, name, data ) {	
+var str = '';
+	$.each( data.split('.'), function(k, v) {
+		str += "&" + v + '=' + $('#' + v).val();
+		
+9 - пишем функцию для отправки ajax - запроса
+
+$.ajax( {
+	url : '' + url,
+	type: 'POST',
+	data: name + '_f=1' + str,
+	cach: false,
+	success: function( result ) {
+		alert(result); 	} }); }
+		
+9.1 Создаем файл gform.php в папке guest/
+9.2 В файле gform пишем скрипт
+if ($_POST['login_f']) {
+	exit('Привет!!!');  }
+9.3
+В файле login, gform,register меняем 
+<button onclick="post_query('test'....
+на  <button onclick="post_query('gform'.....
+
+Проверка:
+При нажатии на кнопку Войти - выскакивает Привет!!!
+
+10 - дописываем условия в gform
+<?   if ($_POST['login_f']) {  	exit('Авторизация'); }
+else if ($_POST['register_f']) { 	exit('Регистрация'); }
+else if ($_POST['recovery_f']) { exit('Восстановление пароля');
+}
+else if ($_POST['confirm_f']) { exit('Подтверждение'); } ?>
+
+Проверка:
+на страницах login, confirm, register, recovery
+при нажатии на кнопки появляются надписи регистрация, акторизация...
+
+11 - в файле login создаем функции
+function message($text) {exit( '{ "message" : "'.$text.'"}'); }
+function go($url) { 	exit('{ "go" : "'.$url.'"}'); }
+
+11.1 - в файле gform меняем  все exit на message
+if ($_POST['login_f']) { message('Авторизация'); }
+else if ($_POST['register_f']) { message('Регистрация'); }
+else if ($_POST['recovery_f']) { message('Восстановление пароля'); }
+else if ($_POST['confirm_f']) { message('Подтверждение'); 
+
+Проверяем - нажатие на кнопки дает вид
+{ "message": "Регистрация"}
+

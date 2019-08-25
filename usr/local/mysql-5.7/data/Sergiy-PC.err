@@ -1,0 +1,89 @@
+2019-07-29T05:52:32.593789Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2019-07-29T05:52:32.643790Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2019-07-29T05:52:32.673790Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2019-07-29T05:52:32.673790Z 0 [Note] \usr\local\mysql-5.7\bin\mysqld.exe (mysqld 5.7.15) starting as process 3096 ...
+2019-07-29T05:52:36.267933Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-07-29T05:52:36.270433Z 0 [Note] InnoDB: Uses event mutexes
+2019-07-29T05:52:36.270433Z 0 [Note] InnoDB: Memory barrier is not used
+2019-07-29T05:52:36.272933Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-07-29T05:52:36.685439Z 0 [Note] InnoDB: Number of pools: 1
+2019-07-29T05:52:36.915140Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2019-07-29T05:52:36.977540Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-07-29T05:52:37.102340Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2019-07-29T05:52:37.788344Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-07-29T05:52:38.069144Z 0 [Note] InnoDB: Log scan progressed past the checkpoint lsn 4327849
+2019-07-29T05:52:38.069144Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 4327858
+2019-07-29T05:52:38.084744Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 4327858
+2019-07-29T05:52:38.084744Z 0 [Note] InnoDB: Database was not shutdown normally!
+2019-07-29T05:52:38.084744Z 0 [Note] InnoDB: Starting crash recovery.
+2019-07-29T05:52:42.932372Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2019-07-29T05:52:42.932372Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2019-07-29T05:52:42.934872Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2019-07-29T05:52:43.669883Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2019-07-29T05:52:43.674883Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2019-07-29T05:52:43.674883Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2019-07-29T05:52:43.677383Z 0 [Note] InnoDB: Waiting for purge to start
+2019-07-29T05:52:43.784885Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 6667ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2019-07-29T05:52:43.797385Z 0 [Note] InnoDB: 5.7.15 started; log sequence number 4327858
+2019-07-29T05:52:43.824885Z 0 [Note] InnoDB: Loading buffer pool(s) from Z:\usr\local\mysql-5.7\data\ib_buffer_pool
+2019-07-29T05:52:43.827385Z 0 [ERROR] InnoDB: Cannot open 'Z:\usr\local\mysql-5.7\data\ib_buffer_pool' for reading: No such file or directory
+2019-07-29T05:52:43.889886Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2019-07-29T05:52:44.532492Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+2019-07-29T05:52:44.532492Z 0 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+2019-07-29T05:52:44.532492Z 0 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+2019-07-29T05:52:44.532492Z 0 [Note] Server socket created on IP: '127.0.0.1'.
+2019-07-29T05:52:48.515812Z 0 [Note] Event Scheduler: Loaded 0 events
+2019-07-29T05:52:48.515812Z 0 [Note] \usr\local\mysql-5.7\bin\mysqld.exe: ready for connections.
+Version: '5.7.15'  socket: ''  port: 3306  MySQL Community Server (GPL)
+2019-07-29T07:07:34.531200Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 270239ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2019-07-29T07:27:20.512500Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 249642ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2019-07-29T08:11:07.517500Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 600439ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2019-07-29T10:23:18.500000Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 1289780ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2019-07-29T10:44:40.515600Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 246360ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2019-07-29T13:11:54.507000Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 80251ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2019-07-29T14:48:30.509000Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 1209834ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2019-07-29T15:43:45.562400Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 1262134ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2019-07-29T16:08:10.500000Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 67409ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2019-07-29T16:32:45.500000Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 1125615ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2019-07-29T19:06:16.376725Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2019-07-29T19:06:16.454730Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2019-07-29T19:06:16.524734Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2019-07-29T19:06:16.524734Z 0 [Note] \usr\local\mysql-5.7\bin\mysqld.exe (mysqld 5.7.15) starting as process 4912 ...
+2019-07-29T19:06:19.288892Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-07-29T19:06:19.290892Z 0 [Note] InnoDB: Uses event mutexes
+2019-07-29T19:06:19.290892Z 0 [Note] InnoDB: Memory barrier is not used
+2019-07-29T19:06:19.291892Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-07-29T19:06:19.710916Z 0 [Note] InnoDB: Number of pools: 1
+2019-07-29T19:06:20.003933Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2019-07-29T19:06:20.107939Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-07-29T19:06:20.266948Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2019-07-29T19:06:20.639969Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-07-29T19:06:20.771977Z 0 [Note] InnoDB: Log scan progressed past the checkpoint lsn 4327877
+2019-07-29T19:06:20.773977Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 4327886
+2019-07-29T19:06:20.808979Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 4327886
+2019-07-29T19:06:20.809979Z 0 [Note] InnoDB: Database was not shutdown normally!
+2019-07-29T19:06:20.810979Z 0 [Note] InnoDB: Starting crash recovery.
+2019-07-29T19:06:33.330695Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2019-07-29T19:06:33.331695Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2019-07-29T19:06:33.333695Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2019-07-29T19:06:34.103739Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2019-07-29T19:06:34.107740Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2019-07-29T19:06:34.108740Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2019-07-29T19:06:34.111740Z 0 [Note] InnoDB: Waiting for purge to start
+2019-07-29T19:06:34.197745Z 0 [Note] InnoDB: Waiting for purge to start
+2019-07-29T19:06:34.248748Z 0 [Note] InnoDB: Waiting for purge to start
+2019-07-29T19:06:34.298751Z 0 [Note] InnoDB: Waiting for purge to start
+2019-07-29T19:06:34.368755Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 14074ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2019-07-29T19:06:34.414757Z 0 [Note] InnoDB: 5.7.15 started; log sequence number 4327886
+2019-07-29T19:06:34.438759Z 0 [Note] InnoDB: Loading buffer pool(s) from Z:\usr\local\mysql-5.7\data\ib_buffer_pool
+2019-07-29T19:06:34.440759Z 0 [ERROR] InnoDB: Cannot open 'Z:\usr\local\mysql-5.7\data\ib_buffer_pool' for reading: No such file or directory
+2019-07-29T19:06:34.540764Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2019-07-29T19:06:35.413814Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+2019-07-29T19:06:35.416815Z 0 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+2019-07-29T19:06:35.417815Z 0 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+2019-07-29T19:06:35.419815Z 0 [Note] Server socket created on IP: '127.0.0.1'.
+2019-07-29T19:06:36.483876Z 0 [Note] Event Scheduler: Loaded 0 events
+2019-07-29T19:06:36.484876Z 0 [Note] \usr\local\mysql-5.7\bin\mysqld.exe: ready for connections.
+Version: '5.7.15'  socket: ''  port: 3306  MySQL Community Server (GPL)
+2019-07-30T03:01:21.537002Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 21602068ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2019-07-30T04:03:43.596005Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 1931480ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)

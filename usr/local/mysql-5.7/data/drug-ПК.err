@@ -1,0 +1,392 @@
+2018-09-22T11:35:34.874046Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-09-22T11:35:34.886047Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2018-09-22T11:35:34.890047Z 0 [Note] \usr\local\mysql-5.7\bin\mysqld.exe (mysqld 5.7.15) starting as process 3612 ...
+2018-09-22T11:35:35.460079Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-09-22T11:35:35.462080Z 0 [Note] InnoDB: Uses event mutexes
+2018-09-22T11:35:35.465080Z 0 [Note] InnoDB: Memory barrier is not used
+2018-09-22T11:35:35.466080Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-09-22T11:35:35.511082Z 0 [Note] InnoDB: Number of pools: 1
+2018-09-22T11:35:35.562085Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2018-09-22T11:35:35.567086Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2018-09-22T11:35:35.583086Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2018-09-22T11:35:35.827100Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-09-22T11:35:35.879103Z 0 [Note] InnoDB: Log scan progressed past the checkpoint lsn 2203791
+2018-09-22T11:35:35.880103Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 2203800
+2018-09-22T11:35:35.884104Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 2203800
+2018-09-22T11:35:35.885104Z 0 [Note] InnoDB: Database was not shutdown normally!
+2018-09-22T11:35:35.886104Z 0 [Note] InnoDB: Starting crash recovery.
+2018-09-22T11:35:37.898219Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2018-09-22T11:35:37.898219Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2018-09-22T11:35:37.899219Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2018-09-22T11:35:38.368246Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2018-09-22T11:35:38.395247Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2018-09-22T11:35:38.395247Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2018-09-22T11:35:38.396247Z 0 [Note] InnoDB: Waiting for purge to start
+2018-09-22T11:35:38.462251Z 0 [Note] InnoDB: 5.7.15 started; log sequence number 2203800
+2018-09-22T11:35:38.463251Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2018-09-22T11:35:38.465251Z 0 [Note] InnoDB: Loading buffer pool(s) from Z:\usr\local\mysql-5.7\data\ib_buffer_pool
+2018-09-22T11:35:38.466251Z 0 [ERROR] InnoDB: Cannot open 'Z:\usr\local\mysql-5.7\data\ib_buffer_pool' for reading: No such file or directory
+2018-09-22T11:35:38.641261Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+2018-09-22T11:35:38.642261Z 0 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+2018-09-22T11:35:38.644262Z 0 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+2018-09-22T11:35:38.645262Z 0 [Note] Server socket created on IP: '127.0.0.1'.
+2018-09-22T11:35:39.617317Z 0 [Note] Event Scheduler: Loaded 0 events
+2018-09-22T11:35:39.618317Z 0 [Note] \usr\local\mysql-5.7\bin\mysqld.exe: ready for connections.
+Version: '5.7.15'  socket: ''  port: 3306  MySQL Community Server (GPL)
+2018-09-22T15:53:30.556204Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-09-22T15:53:30.556204Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2018-09-22T15:53:30.556204Z 0 [Note] \usr\local\mysql-5.7\bin\mysqld.exe (mysqld 5.7.15) starting as process 1952 ...
+2018-09-22T15:53:30.581206Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-09-22T15:53:30.588206Z 0 [Note] InnoDB: Uses event mutexes
+2018-09-22T15:53:30.589206Z 0 [Note] InnoDB: Memory barrier is not used
+2018-09-22T15:53:30.589206Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-09-22T15:53:30.590206Z 0 [Note] InnoDB: Number of pools: 1
+2018-09-22T15:53:30.591206Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2018-09-22T15:53:30.595207Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2018-09-22T15:53:30.611207Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2018-09-22T15:53:30.735215Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-09-22T15:53:30.752216Z 0 [Note] InnoDB: Log scan progressed past the checkpoint lsn 2203819
+2018-09-22T15:53:30.755216Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 2203828
+2018-09-22T15:53:30.758216Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 2203828
+2018-09-22T15:53:30.760216Z 0 [Note] InnoDB: Database was not shutdown normally!
+2018-09-22T15:53:30.761216Z 0 [Note] InnoDB: Starting crash recovery.
+2018-09-22T15:53:31.222242Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2018-09-22T15:53:31.223242Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2018-09-22T15:53:31.224243Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2018-09-22T15:53:31.646267Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2018-09-22T15:53:31.670268Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2018-09-22T15:53:31.671268Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2018-09-22T15:53:31.672268Z 0 [Note] InnoDB: Waiting for purge to start
+2018-09-22T15:53:31.736272Z 0 [Note] InnoDB: 5.7.15 started; log sequence number 2203828
+2018-09-22T15:53:31.738272Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2018-09-22T15:53:31.745272Z 0 [Note] InnoDB: Loading buffer pool(s) from Z:\usr\local\mysql-5.7\data\ib_buffer_pool
+2018-09-22T15:53:31.746272Z 0 [ERROR] InnoDB: Cannot open 'Z:\usr\local\mysql-5.7\data\ib_buffer_pool' for reading: No such file or directory
+2018-09-22T15:53:31.813276Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+2018-09-22T15:53:31.813276Z 0 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+2018-09-22T15:53:31.815276Z 0 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+2018-09-22T15:53:31.816276Z 0 [Note] Server socket created on IP: '127.0.0.1'.
+2018-09-22T15:53:32.042289Z 0 [Note] Event Scheduler: Loaded 0 events
+2018-09-22T15:53:32.043289Z 0 [Note] \usr\local\mysql-5.7\bin\mysqld.exe: ready for connections.
+Version: '5.7.15'  socket: ''  port: 3306  MySQL Community Server (GPL)
+2018-09-22T16:21:04.473803Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-09-22T16:21:04.487804Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2018-09-22T16:21:04.502805Z 0 [Note] \usr\local\mysql-5.7\bin\mysqld.exe (mysqld 5.7.15) starting as process 4636 ...
+2018-09-22T16:21:05.287850Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-09-22T16:21:05.289850Z 0 [Note] InnoDB: Uses event mutexes
+2018-09-22T16:21:05.289850Z 0 [Note] InnoDB: Memory barrier is not used
+2018-09-22T16:21:05.290850Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-09-22T16:21:05.349853Z 0 [Note] InnoDB: Number of pools: 1
+2018-09-22T16:21:05.410857Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2018-09-22T16:21:05.451859Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2018-09-22T16:21:05.484861Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2018-09-22T16:21:05.927886Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-09-22T16:21:05.970889Z 0 [Note] InnoDB: Log scan progressed past the checkpoint lsn 2203847
+2018-09-22T16:21:05.971889Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 2203856
+2018-09-22T16:21:05.976889Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 2203856
+2018-09-22T16:21:05.976889Z 0 [Note] InnoDB: Database was not shutdown normally!
+2018-09-22T16:21:05.977889Z 0 [Note] InnoDB: Starting crash recovery.
+2018-09-22T16:21:07.870997Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2018-09-22T16:21:07.904999Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2018-09-22T16:21:07.940001Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2018-09-22T16:21:09.689101Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2018-09-22T16:21:09.731104Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2018-09-22T16:21:09.732104Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2018-09-22T16:21:09.734104Z 0 [Note] InnoDB: Waiting for purge to start
+2018-09-22T16:21:09.787107Z 0 [Note] InnoDB: Waiting for purge to start
+2018-09-22T16:21:09.837110Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 4350ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2018-09-22T16:21:09.842110Z 0 [Note] InnoDB: 5.7.15 started; log sequence number 2203856
+2018-09-22T16:21:09.844110Z 0 [Note] InnoDB: Loading buffer pool(s) from Z:\usr\local\mysql-5.7\data\ib_buffer_pool
+2018-09-22T16:21:09.845110Z 0 [ERROR] InnoDB: Cannot open 'Z:\usr\local\mysql-5.7\data\ib_buffer_pool' for reading: No such file or directory
+2018-09-22T16:21:09.995119Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2018-09-22T16:21:10.534150Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+2018-09-22T16:21:10.536150Z 0 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+2018-09-22T16:21:10.538150Z 0 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+2018-09-22T16:21:10.540150Z 0 [Note] Server socket created on IP: '127.0.0.1'.
+2018-09-22T16:21:11.904228Z 0 [Note] Event Scheduler: Loaded 0 events
+2018-09-22T16:21:11.905228Z 0 [Note] \usr\local\mysql-5.7\bin\mysqld.exe: ready for connections.
+Version: '5.7.15'  socket: ''  port: 3306  MySQL Community Server (GPL)
+2018-09-22T16:37:45.596747Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-09-22T16:37:45.629749Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2018-09-22T16:37:45.654751Z 0 [Note] \usr\local\mysql-5.7\bin\mysqld.exe (mysqld 5.7.15) starting as process 4784 ...
+2018-09-22T16:37:46.272786Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-09-22T16:37:46.274786Z 0 [Note] InnoDB: Uses event mutexes
+2018-09-22T16:37:46.274786Z 0 [Note] InnoDB: Memory barrier is not used
+2018-09-22T16:37:46.275786Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-09-22T16:37:46.296787Z 0 [Note] InnoDB: Number of pools: 1
+2018-09-22T16:37:46.392793Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2018-09-22T16:37:46.470797Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2018-09-22T16:37:46.546802Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2018-09-22T16:37:46.757814Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-09-22T16:37:46.787816Z 0 [Note] InnoDB: Log scan progressed past the checkpoint lsn 2203875
+2018-09-22T16:37:46.787816Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 2203884
+2018-09-22T16:37:46.790816Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 2203884
+2018-09-22T16:37:46.792816Z 0 [Note] InnoDB: Database was not shutdown normally!
+2018-09-22T16:37:46.793816Z 0 [Note] InnoDB: Starting crash recovery.
+2018-09-22T16:37:47.590861Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2018-09-22T16:37:47.590861Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2018-09-22T16:37:47.591862Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2018-09-22T16:37:48.048888Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2018-09-22T16:37:48.093890Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2018-09-22T16:37:48.094890Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2018-09-22T16:37:48.095890Z 0 [Note] InnoDB: Waiting for purge to start
+2018-09-22T16:37:48.145893Z 0 [Note] InnoDB: Waiting for purge to start
+2018-09-22T16:37:48.227898Z 0 [Note] InnoDB: 5.7.15 started; log sequence number 2203884
+2018-09-22T16:37:48.238899Z 0 [Note] InnoDB: Loading buffer pool(s) from Z:\usr\local\mysql-5.7\data\ib_buffer_pool
+2018-09-22T16:37:48.239899Z 0 [ERROR] InnoDB: Cannot open 'Z:\usr\local\mysql-5.7\data\ib_buffer_pool' for reading: No such file or directory
+2018-09-22T16:37:48.302902Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2018-09-22T16:37:48.850934Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+2018-09-22T16:37:48.851934Z 0 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+2018-09-22T16:37:48.853934Z 0 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+2018-09-22T16:37:48.853934Z 0 [Note] Server socket created on IP: '127.0.0.1'.
+2018-09-22T16:37:49.977998Z 0 [Note] Event Scheduler: Loaded 0 events
+2018-09-22T16:37:49.979998Z 0 [Note] \usr\local\mysql-5.7\bin\mysqld.exe: ready for connections.
+Version: '5.7.15'  socket: ''  port: 3306  MySQL Community Server (GPL)
+2018-09-22T18:13:47.510000Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 1023915ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2018-09-22T20:18:51.512000Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 278617ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2018-09-22T20:23:33.498480Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-09-22T20:23:33.529680Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2018-09-22T20:23:33.545280Z 0 [Note] \usr\local\mysql-5.7\bin\mysqld.exe (mysqld 5.7.15) starting as process 2760 ...
+2018-09-22T20:23:34.247282Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-09-22T20:23:34.247282Z 0 [Note] InnoDB: Uses event mutexes
+2018-09-22T20:23:34.247282Z 0 [Note] InnoDB: Memory barrier is not used
+2018-09-22T20:23:34.247282Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-09-22T20:23:34.325282Z 0 [Note] InnoDB: Number of pools: 1
+2018-09-22T20:23:34.450082Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2018-09-22T20:23:34.512482Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2018-09-22T20:23:34.543682Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2018-09-22T20:23:34.808883Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-09-22T20:23:34.871283Z 0 [Note] InnoDB: Log scan progressed past the checkpoint lsn 2203903
+2018-09-22T20:23:34.871283Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 2203912
+2018-09-22T20:23:34.871283Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 2203912
+2018-09-22T20:23:34.871283Z 0 [Note] InnoDB: Database was not shutdown normally!
+2018-09-22T20:23:34.871283Z 0 [Note] InnoDB: Starting crash recovery.
+2018-09-22T20:23:36.041285Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2018-09-22T20:23:36.041285Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2018-09-22T20:23:36.041285Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2018-09-22T20:23:36.478086Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2018-09-22T20:23:36.509286Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2018-09-22T20:23:36.509286Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2018-09-22T20:23:36.509286Z 0 [Note] InnoDB: Waiting for purge to start
+2018-09-22T20:23:36.571686Z 0 [Note] InnoDB: Waiting for purge to start
+2018-09-22T20:23:36.649686Z 0 [Note] InnoDB: 5.7.15 started; log sequence number 2203912
+2018-09-22T20:23:36.649686Z 0 [Note] InnoDB: Loading buffer pool(s) from Z:\usr\local\mysql-5.7\data\ib_buffer_pool
+2018-09-22T20:23:36.649686Z 0 [ERROR] InnoDB: Cannot open 'Z:\usr\local\mysql-5.7\data\ib_buffer_pool' for reading: No such file or directory
+2018-09-22T20:23:36.696486Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2018-09-22T20:23:37.242487Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+2018-09-22T20:23:37.242487Z 0 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+2018-09-22T20:23:37.242487Z 0 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+2018-09-22T20:23:37.258087Z 0 [Note] Server socket created on IP: '127.0.0.1'.
+2018-09-22T20:23:38.147289Z 0 [Note] Event Scheduler: Loaded 0 events
+2018-09-22T20:23:38.147289Z 0 [Note] \usr\local\mysql-5.7\bin\mysqld.exe: ready for connections.
+Version: '5.7.15'  socket: ''  port: 3306  MySQL Community Server (GPL)
+2018-09-22T21:31:40.514000Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 2020274ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2018-09-22T21:52:05.356014Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-09-22T21:52:05.356014Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2018-09-22T21:52:05.390016Z 0 [Note] \usr\local\mysql-5.7\bin\mysqld.exe (mysqld 5.7.15) starting as process 4072 ...
+2018-09-22T21:52:05.476021Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-09-22T21:52:05.492022Z 0 [Note] InnoDB: Uses event mutexes
+2018-09-22T21:52:05.507023Z 0 [Note] InnoDB: Memory barrier is not used
+2018-09-22T21:52:05.509023Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-09-22T21:52:05.511023Z 0 [Note] InnoDB: Number of pools: 1
+2018-09-22T21:52:05.515023Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2018-09-22T21:52:05.522023Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2018-09-22T21:52:05.540025Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2018-09-22T21:52:05.680033Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-09-22T21:52:05.687033Z 0 [Note] InnoDB: Log scan progressed past the checkpoint lsn 2203931
+2018-09-22T21:52:05.690033Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 2203940
+2018-09-22T21:52:05.692033Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 2203940
+2018-09-22T21:52:05.693033Z 0 [Note] InnoDB: Database was not shutdown normally!
+2018-09-22T21:52:05.694033Z 0 [Note] InnoDB: Starting crash recovery.
+2018-09-22T21:52:07.099114Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2018-09-22T21:52:07.109114Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2018-09-22T21:52:07.110114Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2018-09-22T21:52:07.671146Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2018-09-22T21:52:07.713149Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2018-09-22T21:52:07.715149Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2018-09-22T21:52:07.716149Z 0 [Note] InnoDB: Waiting for purge to start
+2018-09-22T21:52:07.790153Z 0 [Note] InnoDB: 5.7.15 started; log sequence number 2203940
+2018-09-22T21:52:07.804154Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2018-09-22T21:52:07.807154Z 0 [Note] InnoDB: Loading buffer pool(s) from Z:\usr\local\mysql-5.7\data\ib_buffer_pool
+2018-09-22T21:52:07.808154Z 0 [ERROR] InnoDB: Cannot open 'Z:\usr\local\mysql-5.7\data\ib_buffer_pool' for reading: No such file or directory
+2018-09-22T21:52:08.219178Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+2018-09-22T21:52:08.221178Z 0 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+2018-09-22T21:52:08.225178Z 0 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+2018-09-22T21:52:08.226178Z 0 [Note] Server socket created on IP: '127.0.0.1'.
+2018-09-22T21:52:10.996337Z 0 [Note] Event Scheduler: Loaded 0 events
+2018-09-22T21:52:11.003337Z 0 [Note] \usr\local\mysql-5.7\bin\mysqld.exe: ready for connections.
+Version: '5.7.15'  socket: ''  port: 3306  MySQL Community Server (GPL)
+2018-09-22T22:17:38.373698Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-09-22T22:17:38.373698Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2018-09-22T22:17:38.403699Z 0 [Note] \usr\local\mysql-5.7\bin\mysqld.exe (mysqld 5.7.15) starting as process 3468 ...
+2018-09-22T22:17:38.423700Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-09-22T22:17:38.425701Z 0 [Note] InnoDB: Uses event mutexes
+2018-09-22T22:17:38.429701Z 0 [Note] InnoDB: Memory barrier is not used
+2018-09-22T22:17:38.432701Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-09-22T22:17:38.438701Z 0 [Note] InnoDB: Number of pools: 1
+2018-09-22T22:17:38.440701Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2018-09-22T22:17:38.445702Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2018-09-22T22:17:38.460703Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2018-09-22T22:17:38.535707Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-09-22T22:17:38.538707Z 0 [Note] InnoDB: Log scan progressed past the checkpoint lsn 2203959
+2018-09-22T22:17:38.539707Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 2203968
+2018-09-22T22:17:38.541707Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 2203968
+2018-09-22T22:17:38.542707Z 0 [Note] InnoDB: Database was not shutdown normally!
+2018-09-22T22:17:38.543707Z 0 [Note] InnoDB: Starting crash recovery.
+2018-09-22T22:17:38.815723Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2018-09-22T22:17:38.816723Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2018-09-22T22:17:38.817723Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2018-09-22T22:17:38.957731Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2018-09-22T22:17:38.974732Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2018-09-22T22:17:38.975732Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2018-09-22T22:17:38.976732Z 0 [Note] InnoDB: Waiting for purge to start
+2018-09-22T22:17:39.027735Z 0 [Note] InnoDB: 5.7.15 started; log sequence number 2203968
+2018-09-22T22:17:39.028735Z 0 [Note] InnoDB: Loading buffer pool(s) from Z:\usr\local\mysql-5.7\data\ib_buffer_pool
+2018-09-22T22:17:39.028735Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2018-09-22T22:17:39.029735Z 0 [ERROR] InnoDB: Cannot open 'Z:\usr\local\mysql-5.7\data\ib_buffer_pool' for reading: No such file or directory
+2018-09-22T22:17:39.044736Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+2018-09-22T22:17:39.045736Z 0 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+2018-09-22T22:17:39.047736Z 0 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+2018-09-22T22:17:39.048736Z 0 [Note] Server socket created on IP: '127.0.0.1'.
+2018-09-22T22:17:39.145742Z 0 [Note] Event Scheduler: Loaded 0 events
+2018-09-22T22:17:39.145742Z 0 [Note] \usr\local\mysql-5.7\bin\mysqld.exe: ready for connections.
+Version: '5.7.15'  socket: ''  port: 3306  MySQL Community Server (GPL)
+2018-09-23T00:14:32.417549Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-09-23T00:14:32.417549Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2018-09-23T00:14:32.421549Z 0 [Note] \usr\local\mysql-5.7\bin\mysqld.exe (mysqld 5.7.15) starting as process 2516 ...
+2018-09-23T00:14:32.438550Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-09-23T00:14:32.439550Z 0 [Note] InnoDB: Uses event mutexes
+2018-09-23T00:14:32.445551Z 0 [Note] InnoDB: Memory barrier is not used
+2018-09-23T00:14:32.445551Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-09-23T00:14:32.447551Z 0 [Note] InnoDB: Number of pools: 1
+2018-09-23T00:14:32.447551Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2018-09-23T00:14:32.450551Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2018-09-23T00:14:32.475553Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2018-09-23T00:14:32.546557Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-09-23T00:14:32.555557Z 0 [Note] InnoDB: Log scan progressed past the checkpoint lsn 2203987
+2018-09-23T00:14:32.564558Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 2203996
+2018-09-23T00:14:32.579558Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 2203996
+2018-09-23T00:14:32.584559Z 0 [Note] InnoDB: Database was not shutdown normally!
+2018-09-23T00:14:32.585559Z 0 [Note] InnoDB: Starting crash recovery.
+2018-09-23T00:14:32.838573Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2018-09-23T00:14:32.839573Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2018-09-23T00:14:32.840573Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2018-09-23T00:14:33.012583Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2018-09-23T00:14:33.016583Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2018-09-23T00:14:33.017584Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2018-09-23T00:14:33.018584Z 0 [Note] InnoDB: Waiting for purge to start
+2018-09-23T00:14:33.068586Z 0 [Note] InnoDB: 5.7.15 started; log sequence number 2203996
+2018-09-23T00:14:33.069587Z 0 [Note] InnoDB: Loading buffer pool(s) from Z:\usr\local\mysql-5.7\data\ib_buffer_pool
+2018-09-23T00:14:33.069587Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2018-09-23T00:14:33.069587Z 0 [ERROR] InnoDB: Cannot open 'Z:\usr\local\mysql-5.7\data\ib_buffer_pool' for reading: No such file or directory
+2018-09-23T00:14:33.089588Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+2018-09-23T00:14:33.090588Z 0 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+2018-09-23T00:14:33.091588Z 0 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+2018-09-23T00:14:33.092588Z 0 [Note] Server socket created on IP: '127.0.0.1'.
+2018-09-23T00:14:33.196594Z 0 [Note] Event Scheduler: Loaded 0 events
+2018-09-23T00:14:33.197594Z 0 [Note] \usr\local\mysql-5.7\bin\mysqld.exe: ready for connections.
+Version: '5.7.15'  socket: ''  port: 3306  MySQL Community Server (GPL)
+2018-09-23T00:15:38.697340Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-09-23T00:15:38.697340Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2018-09-23T00:15:38.704341Z 0 [Note] \usr\local\mysql-5.7\bin\mysqld.exe (mysqld 5.7.15) starting as process 2888 ...
+2018-09-23T00:15:38.722342Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-09-23T00:15:38.723342Z 0 [Note] InnoDB: Uses event mutexes
+2018-09-23T00:15:38.725342Z 0 [Note] InnoDB: Memory barrier is not used
+2018-09-23T00:15:38.726342Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-09-23T00:15:38.727342Z 0 [Note] InnoDB: Number of pools: 1
+2018-09-23T00:15:38.727342Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2018-09-23T00:15:38.733342Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2018-09-23T00:15:38.754343Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2018-09-23T00:15:38.844349Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-09-23T00:15:38.858349Z 0 [Note] InnoDB: Log scan progressed past the checkpoint lsn 2204015
+2018-09-23T00:15:38.859349Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 2204024
+2018-09-23T00:15:38.861350Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 2204024
+2018-09-23T00:15:38.864350Z 0 [Note] InnoDB: Database was not shutdown normally!
+2018-09-23T00:15:38.864350Z 0 [Note] InnoDB: Starting crash recovery.
+2018-09-23T00:15:39.092363Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2018-09-23T00:15:39.093363Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2018-09-23T00:15:39.094363Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2018-09-23T00:15:39.230371Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2018-09-23T00:15:39.242371Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2018-09-23T00:15:39.243371Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2018-09-23T00:15:39.244372Z 0 [Note] InnoDB: Waiting for purge to start
+2018-09-23T00:15:39.294374Z 0 [Note] InnoDB: 5.7.15 started; log sequence number 2204024
+2018-09-23T00:15:39.295374Z 0 [Note] InnoDB: Loading buffer pool(s) from Z:\usr\local\mysql-5.7\data\ib_buffer_pool
+2018-09-23T00:15:39.295374Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2018-09-23T00:15:39.295374Z 0 [ERROR] InnoDB: Cannot open 'Z:\usr\local\mysql-5.7\data\ib_buffer_pool' for reading: No such file or directory
+2018-09-23T00:15:39.312375Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+2018-09-23T00:15:39.313375Z 0 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+2018-09-23T00:15:39.315376Z 0 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+2018-09-23T00:15:39.315376Z 0 [Note] Server socket created on IP: '127.0.0.1'.
+2018-09-23T00:15:39.406381Z 0 [Note] Event Scheduler: Loaded 0 events
+2018-09-23T00:15:39.406381Z 0 [Note] \usr\local\mysql-5.7\bin\mysqld.exe: ready for connections.
+Version: '5.7.15'  socket: ''  port: 3306  MySQL Community Server (GPL)
+2018-09-23T00:19:37.010350Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-09-23T00:19:37.010350Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2018-09-23T00:19:37.012350Z 0 [Note] \usr\local\mysql-5.7\bin\mysqld.exe (mysqld 5.7.15) starting as process 7052 ...
+2018-09-23T00:19:37.040352Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-09-23T00:19:37.044352Z 0 [Note] InnoDB: Uses event mutexes
+2018-09-23T00:19:37.045352Z 0 [Note] InnoDB: Memory barrier is not used
+2018-09-23T00:19:37.075354Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-09-23T00:19:37.131357Z 0 [Note] InnoDB: Number of pools: 1
+2018-09-23T00:19:37.177360Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2018-09-23T00:19:37.180360Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2018-09-23T00:19:37.208361Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2018-09-23T00:19:37.347369Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-09-23T00:19:37.458376Z 0 [Note] InnoDB: Log scan progressed past the checkpoint lsn 2204043
+2018-09-23T00:19:37.471376Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 2204052
+2018-09-23T00:19:37.541380Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 2204052
+2018-09-23T00:19:37.585383Z 0 [Note] InnoDB: Database was not shutdown normally!
+2018-09-23T00:19:37.625385Z 0 [Note] InnoDB: Starting crash recovery.
+2018-09-23T00:19:38.095412Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2018-09-23T00:19:38.122414Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2018-09-23T00:19:38.197418Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2018-09-23T00:19:38.652444Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2018-09-23T00:19:38.722448Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2018-09-23T00:19:38.977462Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2018-09-23T00:19:38.978463Z 0 [Note] InnoDB: Waiting for purge to start
+2018-09-23T00:19:39.037466Z 0 [Note] InnoDB: 5.7.15 started; log sequence number 2204052
+2018-09-23T00:19:39.046466Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2018-09-23T00:19:39.081468Z 0 [Note] InnoDB: Loading buffer pool(s) from Z:\usr\local\mysql-5.7\data\ib_buffer_pool
+2018-09-23T00:19:39.138472Z 0 [ERROR] InnoDB: Cannot open 'Z:\usr\local\mysql-5.7\data\ib_buffer_pool' for reading: No such file or directory
+2018-09-23T00:19:39.412487Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+2018-09-23T00:19:39.421488Z 0 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+2018-09-23T00:19:39.476491Z 0 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+2018-09-23T00:19:39.478491Z 0 [Note] Server socket created on IP: '127.0.0.1'.
+2018-09-23T00:19:40.248535Z 0 [Note] Event Scheduler: Loaded 0 events
+2018-09-23T00:19:40.249535Z 0 [Note] \usr\local\mysql-5.7\bin\mysqld.exe: ready for connections.
+Version: '5.7.15'  socket: ''  port: 3306  MySQL Community Server (GPL)
+2018-09-23T06:04:25.401365Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-09-23T06:04:25.402365Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2018-09-23T06:04:25.403366Z 0 [Note] \usr\local\mysql-5.7\bin\mysqld.exe (mysqld 5.7.15) starting as process 3700 ...
+2018-09-23T06:04:25.514372Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-09-23T06:04:25.515372Z 0 [Note] InnoDB: Uses event mutexes
+2018-09-23T06:04:25.515372Z 0 [Note] InnoDB: Memory barrier is not used
+2018-09-23T06:04:25.516372Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-09-23T06:04:25.517372Z 0 [Note] InnoDB: Number of pools: 1
+2018-09-23T06:04:25.517372Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2018-09-23T06:04:25.519372Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2018-09-23T06:04:25.533373Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2018-09-23T06:04:25.955397Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-09-23T06:04:26.096405Z 0 [Note] InnoDB: Log scan progressed past the checkpoint lsn 2204071
+2018-09-23T06:04:26.100405Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 2204080
+2018-09-23T06:04:26.133407Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 2204080
+2018-09-23T06:04:26.137408Z 0 [Note] InnoDB: Database was not shutdown normally!
+2018-09-23T06:04:26.144408Z 0 [Note] InnoDB: Starting crash recovery.
+2018-09-23T06:04:27.309475Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2018-09-23T06:04:27.310475Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2018-09-23T06:04:27.311475Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2018-09-23T06:04:27.696497Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2018-09-23T06:04:27.739499Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2018-09-23T06:04:27.753500Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2018-09-23T06:04:27.763501Z 0 [Note] InnoDB: Waiting for purge to start
+2018-09-23T06:04:27.822504Z 0 [Note] InnoDB: 5.7.15 started; log sequence number 2204080
+2018-09-23T06:04:27.825504Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2018-09-23T06:04:27.836505Z 0 [Note] InnoDB: Loading buffer pool(s) from Z:\usr\local\mysql-5.7\data\ib_buffer_pool
+2018-09-23T06:04:27.851506Z 0 [ERROR] InnoDB: Cannot open 'Z:\usr\local\mysql-5.7\data\ib_buffer_pool' for reading: No such file or directory
+2018-09-23T06:04:27.998514Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+2018-09-23T06:04:28.016515Z 0 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+2018-09-23T06:04:28.051517Z 0 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+2018-09-23T06:04:28.123521Z 0 [Note] Server socket created on IP: '127.0.0.1'.
+2018-09-23T06:04:31.032688Z 0 [Note] Event Scheduler: Loaded 0 events
+2018-09-23T06:04:31.033688Z 0 [Note] \usr\local\mysql-5.7\bin\mysqld.exe: ready for connections.
+Version: '5.7.15'  socket: ''  port: 3306  MySQL Community Server (GPL)

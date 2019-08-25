@@ -1,0 +1,13 @@
+body {margin:0 0 0 10;
+	background:#202020;
+	color:#808080;
+	font:16px Verdana, sans-serif;
+	/* цвет и размер текста */
+	min-height:1200px}
+
+
+
+button {
+	color: red;
+	/* цвет текста */
+}

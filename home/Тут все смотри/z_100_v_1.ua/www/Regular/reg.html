@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://regexpstudio.com/ru/regexp_syntax.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Синтаксис регулярных выражений – TRegExpr – Regular expressions in pure Delphi</title>
+
+    
+    
+    <meta property="og:locale" content="ru_RU">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <link rel="shortcut icon" type="image/x-icon" href="http://regexpstudio.com/images/favicon.ico">
+
+    
+        <meta name="description" content="Regular expressions in pure Delphi">
+        <meta property="og:description" content="Regular expressions in pure Delphi">
+    
+    <meta name="author" content="TRegExpr">
+
+    
+        <meta property="og:title" content="Синтаксис регулярных выражений">
+        <meta property="twitter:title" content="Синтаксис регулярных выражений">
+    
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script async="" src="./reg_files/analytics.js.Без названия"></script><script src="./reg_files/jquery-3.1.1.min.js.Без названия" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./reg_files/bootstrap.min.js.Без названия"></script>
+    <script type="text/javascript" src="./reg_files/jquery.min.js.Без названия"></script>
+    <script async="" defer="" src="./reg_files/buttons.js.Без названия"></script>
+
+    <link rel="stylesheet" type="text/css" href="./reg_files/style.css">
+    <link rel="stylesheet" type="text/css" href="./reg_files/flag-icon.min.css">
+    <link href="./reg_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./reg_files/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="alternate" type="application/rss+xml" title="TRegExpr - Regular expressions in pure Delphi" href="http://regexpstudio.com/feed.xml">
+
+    
+    
+    
+    
+        <link rel="alternate" hreflang="bg" href="http://regexpstudio.com/bg/regexp_syntax.html">
+    
+        <link rel="alternate" hreflang="de" href="http://regexpstudio.com/de/regexp_syntax.html">
+    
+        <link rel="alternate" hreflang="en" href="http://regexpstudio.com/en/regexp_syntax.html">
+    
+        <link rel="alternate" hreflang="es" href="http://regexpstudio.com/es/regexp_syntax.html">
+    
+        <link rel="alternate" hreflang="fr" href="http://regexpstudio.com/fr/regexp_syntax.html">
+    
+        <link rel="alternate" hreflang="ru" href="http://regexpstudio.com/ru/regexp_syntax.html">
+    
+
+  </head>
+
+  <body>
+    <header class="masthead clearfix">
+    <div class="wrapper-masthead">
+        <div class="container">
+            <div class="row">
+            <div class="col-sm-5">
+                <a href="http://regexpstudio.com/ru/index.html" class="site-avatar"><img class="avatar-img" src="./reg_files/1568089"></a>
+                <div class="site-info">
+                    <h1 class="site-name"><a href="http://regexpstudio.com/ru/index.html">TRegExpr</a></h1>
+                    <p class="site-description">Regular expressions in pure Delphi</p>
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <nav>
+                            
+                                <a href="http://regexpstudio.com/ru/index.html">Главная</a>
+                            
+                                <a href="http://regexpstudio.com/ru/regexp_syntax.html">Синтаксис</a>
+                            
+                                <a href="http://regexpstudio.com/ru/tregexpr_interface.html">Интерфейс</a>
+                            
+                                <a href="http://regexpstudio.com/ru/demos.html">Примеры</a>
+                            
+                                <a href="http://regexpstudio.com/ru/tregexpr_testrexp.html">Демо-проект</a>
+                            
+                                <a href="http://regexpstudio.com/ru/faq.html">ЧаВо</a>
+                            
+                                <a href="http://regexpstudio.com/ru/about.html">Обо мне</a>
+                            
+                        </nav>
+                    </div>
+                    <div class="col-sm-3">
+                        
+
+
+
+
+    
+        <a href="http://regexpstudio.com/bg/regexp_syntax.html" class="bg">
+            <span class="badge">Български</span>
+        </a>
+    
+
+    
+        <a href="http://regexpstudio.com/de/regexp_syntax.html" class="de">
+            <span class="badge">Deutsche</span>
+        </a>
+    
+
+    
+        <a href="http://regexpstudio.com/en/regexp_syntax.html" class="en">
+            <span class="badge">English</span>
+        </a>
+    
+
+    
+        <a href="http://regexpstudio.com/es/regexp_syntax.html" class="es">
+            <span class="badge">Español</span>
+        </a>
+    
+
+    
+        <a href="http://regexpstudio.com/fr/regexp_syntax.html" class="fr">
+            <span class="badge">Français</span>
+        </a>
+    
+
+    
+
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 text-right">
+                        <form action="http://www.google.com/cse" class="form-inline">
+    <div class="form-group">
+        <input type="hidden" name="cx" value="004117517373819086810:vnaomk_rzpy">
+        <input type="hidden" name="ie" value="UTF-8">
+        <div class="col-sm-12">
+            <input placeholder="Поиск по сайту..." class="form-control" type="text" name="q" tabindex="0" accesskey="S">
+        </div>
+        <input id="searchsubmit" type="hidden" name="sa" value="Search">
+    </div>
+</form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <a href="https://github.com/masterandrey/TRegExpr">
+        <img style="position: absolute; top: 0; left: 0; border: 0;" src="./reg_files/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png">
+    </a>
+
+    <div id="main" role="main" class="container">
+      <article class="page">
+
+  <h1>Синтаксис регулярных выражений</h1>
+
+  <div class="entry">
+    <h2 id="Введение">Введение</h2>
+
+<p>Регулярные выражения - это широкоиспользуемый способ описания шаблонов
+для поиска текста и проверки соответствия текста шаблону. Специальные
+метасимволы позволяют определять, например, что Вы ищете подстроку в
+начале входной строки или определенное число повторений подстроки.</p>
+
+<p>На первый взгляд регулярные выражения выглядят страшновато (ну хорошо,
+на второй - еще страшнее ;) ).</p>
+
+<p>Однако Вы очень быстро оцените всю их мощь. Они съэкономят Вам многие
+часы ненужного кодирования, а в некоторых случаях будут и быстрее
+работать, чем вручную закодированные проверки.</p>
+
+<p>Я настоятельно рекомендую Вам “поиграть” с поставляемой в дистрибутиве
+демо-программой для Windows 
+<a href="https://github.com/masterandrey/TRegExpr/releases/download/0.952b/REStudio.exe">REStudio</a> - 
+это позволит Вам
+лучше понять принцип работы регулярных выражений и отладить Ваши
+собственные выражения. Кроме того, в TestRExp входит множество примеров
+выражений.</p>
+
+<p>Ниже дается описание подмножества синтаксиса регулярных выражений,
+которое работает практически во всех реализациях, и поддерживается
+моей Delphi-библиотекой <a href="http://regexpstudio.com/ru/index.html">TRegExpr</a>
+вошедшей как стандарт в <a href="http://wiki.freepascal.org/Regexpr">Lazarus (Free Pascal)</a>.</p>
+
+<p>Давайте начнем наше знакомство с регулярными выражениями!</p>
+
+<h2 id="Простое-сравнение">Простое сравнение</h2>
+
+<p>Любой символ совпадает с самим собой, если он не относится к специальным
+метасимволам описанным чуть ниже.</p>
+
+<p>Последовательность символов совпадает с такой же последовательностью во
+входной строке, так что шаблон <code class="highlighter-rouge">bluh</code> совпадет с подстрокой <code class="highlighter-rouge">bluh</code> во
+входной строке. Пока все просто, не так ли ?</p>
+
+<p>Если необходимо, чтобы метасимволы или escape-последовательности
+воспринимались как обычные символы, их нужно предварять символом <code class="highlighter-rouge">\</code>,
+например, метасимвол <code class="highlighter-rouge">^</code> обычно совпадает с началом строк, однако, если
+записать его как <code class="highlighter-rouge">\^</code>, то он будет совпадать с символом <code class="highlighter-rouge">^</code>, <code class="highlighter-rouge">\\</code>
+совпадает с <code class="highlighter-rouge">\</code> и т.д.</p>
+
+<h4 id="Примеры">Примеры:</h4>
+<dl>
+  <dt>foobar &nbsp; &nbsp; &nbsp; &nbsp;</dt>
+  <dd>находит ‘foobar’</dd>
+  <dt>\^FooBarPtr</dt>
+  <dd>находит ‘^FooBarPtr’</dd>
+</dl>
+
+<h2 id="escape-последовательности">Escape-последовательности</h2>
+
+<p>Любой символ может быть определен с помощью escape последовательности,
+так же как это делается в языках C или Perl: <code class="highlighter-rouge">\n</code> означает начало
+строки, <code class="highlighter-rouge">\t</code> - табуляцию и т.д.. Вообще, <code class="highlighter-rouge">\xnn</code>, где <code class="highlighter-rouge">nn</code> это
+последовательность шестнадцатеричных цифр, означает символ с ASCII-кодом
+nn. Если необходимо определить двухбайтный (Unicode) символ, используйте
+формат <code class="highlighter-rouge">\x{nnnn}</code>, где <code class="highlighter-rouge">nnnn</code> - одна или более шестнадцатеричных цифр.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>\xnn &nbsp; &nbsp;  символ с шестнадцатеричным кодом nn
+\x{nnnn}  символ с шестнадцатеричным кодом nnnn (более одного байта можно задавать только в режиме [Unicode](tregexpr_interface.html#unicode))|
+\t &nbsp; &nbsp; &nbsp;  табуляция (HT/TAB), можно также \x09
+\n &nbsp; &nbsp; &nbsp;  новая строка (NL), можно также \x0a
+\r &nbsp; &nbsp; &nbsp;  возврат каретки (CR), можно также \x0d|
+\f&nbsp; &nbsp; &nbsp;  перевод формата (FF), можно также \x0c|
+\a &nbsp; &nbsp; &nbsp;  звонок (BEL), можно также \x07|
+\e &nbsp; &nbsp; &nbsp;  escape (ESC), можно также \x1b|
+</code></pre>
+</div>
+
+<h4 id="Примеры-1">Примеры:</h4>
+<dl>
+  <dt>foo\x20bar &nbsp;</dt>
+  <dd>находит ‘foo bar’ (обратите внимание на пробел посередине)</dd>
+  <dt>\tfoobar &nbsp;</dt>
+  <dd>находит ‘foobar’ предшествуемый табуляцией</dd>
+</dl>
+
+<h2 id="Перечни-символов">Перечни символов</h2>
+
+<p>Вы можете определить перечень, заключив символы в <code class="highlighter-rouge">[]</code>. Перечень будет
+совпадать с любым одним символом перечисленным в нем.</p>
+
+<p>Если первый символ перечня (сразу после <code class="highlighter-rouge">[</code>) - <code class="highlighter-rouge">^</code>, то такой перечень
+совпадает с любым символом не перечисленным в перечне.</p>
+
+<h4 id="Примеры-2">Примеры:</h4>
+<dl>
+  <dt>foob[aeiou]r</dt>
+  <dd>находит ‘foobar’, ‘foober’ &nbsp;и т.д. но не ‘foobbr’, ‘foobcr’ и т.д.</dd>
+  <dt>foob[^aeiou]r</dt>
+  <dd>находит ‘foobbr’, ‘foobcr’ &nbsp;и т.д.. но не ‘foobar’,’foober’ &nbsp;и т.д.</dd>
+</dl>
+
+<p>Внутри перечня символ <code class="highlighter-rouge">-</code> может быть использован для определения
+диапазонов символов, например <code class="highlighter-rouge">a-z</code> представляет все символы между<code class="highlighter-rouge">a</code> и
+<code class="highlighter-rouge">z</code>, включительно.</p>
+
+<p>Если Вам необходимо включить в перечень сам символ <code class="highlighter-rouge">-</code>, поместите его в
+начало или конец перечня или предварите <code class="highlighter-rouge">\</code>. Если Вам необходимо
+поместить в перечень сам символ <code class="highlighter-rouge">]</code>, поместите его в самое начало или
+предварите <code class="highlighter-rouge">\</code>.</p>
+
+<h4 id="Примеры-3">Примеры:</h4>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&nbsp;[-az] &nbsp; &nbsp; 'a', 'z' и '-'
+&nbsp;[az-] &nbsp; &nbsp; 'a', 'z' и '-'
+&nbsp;[a\-z] &nbsp; &nbsp; 'a', 'z' и '-'
+&nbsp;[a-z] &nbsp; &nbsp; все 26 малых латинских букв от 'a' до 'z'
+&nbsp;[\n-\x0D] #10, #11, #12, #13.
+&nbsp;[\d-t] &nbsp; &nbsp; цифра, '-' или 't'.
+&nbsp;[]-a] &nbsp; &nbsp; символ из диапазона ']'..'a'.
+</code></pre>
+</div>
+
+<h2 id="Метасимволы">Метасимволы</h2>
+
+<p>Метасимволы - это специальные символы, являющиеся важнейшим понятием в
+регулярных выражениях. Существует несколько групп метасимволов.</p>
+
+<h3 id="Метасимволы---разделители-строк">Метасимволы - разделители строк</h3>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&nbsp;^ &nbsp; &nbsp; начало строки
+&nbsp;$ &nbsp; &nbsp; конец строки
+&nbsp;\A &nbsp; &nbsp; начало текста
+&nbsp;\Z &nbsp; &nbsp; конец текста
+&nbsp;. &nbsp; &nbsp; любой символ в строке
+</code></pre>
+</div>
+
+<h4 id="Примеры-4">Примеры:</h4>
+
+<div class="highlighter-rouge"><pre class="highlight"><code> &nbsp;^foobar &nbsp; &nbsp; находит 'foobar' только если он в начале строки
+ &nbsp;foobar$ &nbsp; &nbsp; находит 'foobar' только если он в конце строки
+ &nbsp;^foobar$ &nbsp; находит 'foobar' только если это единственное слово в строке
+ &nbsp;foob.r &nbsp; &nbsp; находит 'foobar', 'foobbr', 'foob1r' &nbsp;и т.д.
+</code></pre>
+</div>
+
+<p>Метасимвол <code class="highlighter-rouge">^</code> по умолчанию совпадает только в начале входного текста, а
+метасимвол <code class="highlighter-rouge">$</code> &nbsp;- только в конце текста. Внутренние разделители строк,
+имеющиеся в тексте, не будут совпадать с <code class="highlighter-rouge">^</code> и <code class="highlighter-rouge">$</code>.</p>
+
+<p>Однако, если Вам необходимо работать с текстом как с многострочным,
+чтобы <code class="highlighter-rouge">^</code> совпадал после каждого разделителя строки внутри текста, а
+&nbsp;<code class="highlighter-rouge">$</code> - перед каждым разделителем, то Вы можете включить <a href="http://regexpstudio.com/ru/regexp_syntax.html#modifier_m">модификатор
+/m</a>.</p>
+
+<p>Метасимволы <code class="highlighter-rouge">\A</code> и <code class="highlighter-rouge">\Z</code> аналогичны <code class="highlighter-rouge">^</code> и <code class="highlighter-rouge">$</code>, но на них не действует
+<a href="http://regexpstudio.com/ru/regexp_syntax.html#modifier_m">модификатор /m</a>, т.е. они всегда
+совпадают только с началом и концом всего входного текста.</p>
+
+<p>Метасимвол <code class="highlighter-rouge">.</code> по умолчанию совпадает с любым символом, однако, если Вы
+выключите <a href="http://regexpstudio.com/ru/regexp_syntax.html#modifier_s">модификатор /s</a>, то <code class="highlighter-rouge">.</code> не
+будет совпадать с разделителями строк.</p>
+
+<p>TRegExpr интерпретирует разделители строк так, как это рекомендовано на
+<a href="http://www.unicode.org/unicode/reports/tr18/">www.unicode.org</a>:</p>
+
+<p><code class="highlighter-rouge">^</code> совпадает с началом входного текста, а также, если включен
+<a href="http://regexpstudio.com/ru/regexp_syntax.html#modifier_m">модификатор /m</a>, с точкой
+непосредственно следующей после &nbsp;<code class="highlighter-rouge">\x0D\x0A</code>, <code class="highlighter-rouge">\x0A</code> или <code class="highlighter-rouge">\x0D</code> (если Вы
+используете <a href="http://regexpstudio.com/ru/tregexpr_interface.html#unicode">Unicode-версию</a>
+TRegExpr, то также <code class="highlighter-rouge">\x2028</code> или &nbsp;<code class="highlighter-rouge">\x2029</code> или <code class="highlighter-rouge">\x0B</code> или <code class="highlighter-rouge">\x0C</code> или <code class="highlighter-rouge">\x85</code>).
+Обратите внимание, что он не совпадает в промежутке внутри
+последовательности <code class="highlighter-rouge">\x0D\x0A</code>.</p>
+
+<p><code class="highlighter-rouge">$</code> совпадает с концом входного текста, а также, если включен
+<a href="http://regexpstudio.com/ru/regexp_syntax.html#modifier_m">модификатор /m</a>, с точкой
+непосредственно предшествующей <code class="highlighter-rouge">\x0D\x0A</code>, <code class="highlighter-rouge">\x0A</code> или <code class="highlighter-rouge">\x0D</code> (если Вы
+используете <a href="http://regexpstudio.com/ru/tregexpr_interface.html#unicode">Unicode-версию</a>
+TRegExpr, то также <code class="highlighter-rouge">\x2028</code> или &nbsp;<code class="highlighter-rouge">\x2029</code> или <code class="highlighter-rouge">\x0B</code> или <code class="highlighter-rouge">\x0C</code> или <code class="highlighter-rouge">\x85</code>).
+Обратите внимание, что он не совпадает в промежутке внутри
+последовательности <code class="highlighter-rouge">\x0D\x0A</code>.</p>
+
+<p><code class="highlighter-rouge">.</code> совпадает с любым символом, но если выключен <a href="http://regexpstudio.com/ru/regexp_syntax.html#modifier_s">модификаторr
+/s</a>, то <code class="highlighter-rouge">.</code> не совпадает с <code class="highlighter-rouge">\x0D\x0A</code> и
+<code class="highlighter-rouge">\x0A</code> и <code class="highlighter-rouge">\x0D</code> (если Вы используете
+<a href="http://regexpstudio.com/ru/tregexpr_interface.html#unicode">Unicode-версию</a> TRegExpr, то
+не совпадает также с <code class="highlighter-rouge">\x2028</code> и &nbsp;<code class="highlighter-rouge">\x2029</code> и <code class="highlighter-rouge">\x0B</code> и <code class="highlighter-rouge">\x0C</code> и <code class="highlighter-rouge">\x85</code>).</p>
+
+<p>Обратите внимание, что <code class="highlighter-rouge">^.*$</code> (шаблон для пустой строки) не совпадает с
+пустой строкой вида <code class="highlighter-rouge">\x0D\x0A</code>, но совпадает с <code class="highlighter-rouge">\x0A\x0D</code>.</p>
+
+<p>Вы можете перенастроить вышеописанное поведение при обработке
+многострочных текстов - см. описания свойств
+<a href="http://regexpstudio.com/ru/tregexpr_interface.html#lineseparators">LineSeparators</a> и
+<a href="http://regexpstudio.com/ru/tregexpr_interface.html#linepairedseparator">LinePairedSeparator</a>,
+скажем, Вы можете перенастроиться на использование только
+Unix-разделителей строк <code class="highlighter-rouge">\n</code> или только DOS/Windows-разделителей <code class="highlighter-rouge">\r\n</code>
+или же смешанных разделителей (так и настроено по умолчанию) или вообще
+определить свои собственные разделители строк!</p>
+
+<h3 id="Метасимволы---стандартные-перечни-символов">Метасимволы - стандартные перечни символов</h3>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&nbsp;\w &nbsp; &nbsp; буквенно-цифровой символ или "_"
+&nbsp;\W &nbsp; &nbsp; не \w
+&nbsp;\d &nbsp; &nbsp; цифровой символ
+&nbsp;\D &nbsp; &nbsp; не \d
+&nbsp;\s &nbsp; &nbsp; любой "пробельный" символ (по умолчанию - [ \t\n\r\f])
+&nbsp;\S &nbsp; &nbsp; не \s
+</code></pre>
+</div>
+
+<p>Стандартные перечни <code class="highlighter-rouge">\w</code>, <code class="highlighter-rouge">\d</code> и <code class="highlighter-rouge">\s</code> можно использовать и внутри перечней
+символов.</p>
+
+<h4 id="Примеры-5">Примеры:</h4>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&nbsp;foob\dr &nbsp; &nbsp; находит 'foob1r', ''foob6r' &nbsp;и т.д. но не 'foobar', 'foobbr' &nbsp;и т.д.
+&nbsp;foob[\w\s]r находит 'foobar', 'foob r', 'foobbr' &nbsp;и т.д. но не 'foob1r', 'foob=r' &nbsp;и т.д.
+</code></pre>
+</div>
+
+<p>TRegExpr использует свойства
+<a href="http://regexpstudio.com/ru/tregexpr_interface.html#tregexpr.spacechars">SpaceChars</a> и
+<a href="http://regexpstudio.com/ru/tregexpr_interface.html#tregexpr.wordchars">WordChars</a> для того, чтобы
+определять стандартные перечни <code class="highlighter-rouge">\w</code>, <code class="highlighter-rouge">\W</code>, <code class="highlighter-rouge">\s</code>, <code class="highlighter-rouge">\S</code>, т.е. Вы легко можете
+переопределить состав этих перечней.</p>
+
+<h3 id="Метасимволы---границы-слов">Метасимволы - границы слов</h3>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&nbsp;\b &nbsp; &nbsp; Совпадает на границе слова
+&nbsp;\B &nbsp; &nbsp; Совпадает не на границе слова
+</code></pre>
+</div>
+
+<p>Граница слова (<code class="highlighter-rouge">\b</code>) это точка между двумя символами, один из которых
+удовлетворяет <code class="highlighter-rouge">\w</code>, а другой - <code class="highlighter-rouge">\W</code> (в любом порядке), при этом перед
+началом и после конца строки подразумевается <code class="highlighter-rouge">\W</code>.</p>
+
+<h3 id="Метасимволы---повторения">Метасимволы - повторения</h3>
+
+<p>После любого элемента регулярного выражения может следовать очень важный
+тип метасимвола - повторитель. Используя их Вы можете определить число
+допустимых повторений предшествующего символа, метасимвола или
+подвыражения.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&nbsp;* &nbsp; &nbsp; ноль или более раз ("жадный"), то же что {0,}
+&nbsp;+ &nbsp; один или более раз ("жадный"), то же что {1,}
+&nbsp;? &nbsp; ноль или один раз ("жадный"), то же что {0,1}
+&nbsp;{n} &nbsp; точно n раз ("жадный")
+&nbsp;{n,} &nbsp; не менее n раз ("жадный")
+&nbsp;{n,m} не менее n но не более m раз ("жадный")
+&nbsp;*? &nbsp; &nbsp; ноль или более раз ("не жадный"), то же что {0,}?
+&nbsp;+? &nbsp; &nbsp; один или более раз ("не жадный"), то же что {1,}?
+&nbsp;?? &nbsp; &nbsp; ноль или один раз ("не жадный"), то же что {0,1}?
+&nbsp;{n}? &nbsp; точно n раз ("не жадный")
+&nbsp;{n,}? не менее n раз ("не жадный")
+&nbsp;{n,m}? не менее n но не более m раз ("не жадный")
+</code></pre>
+</div>
+
+<p>Т.о. <code class="highlighter-rouge"><span class="p">{</span><span class="err">n,m</span><span class="p">}</span></code> задает минимум n повторов и максимум - <code class="highlighter-rouge">m</code>. Повторитель <code class="highlighter-rouge"><span class="p">{</span><span class="err">n</span><span class="p">}</span></code>
+эквивалентен <code class="highlighter-rouge"><span class="p">{</span><span class="err">n,n</span><span class="p">}</span></code> и задает точно <code class="highlighter-rouge">n</code> повторов. Повторитель <code class="highlighter-rouge"><span class="p">{</span><span class="err">n,</span><span class="p">}</span></code> задает
+минимум n повторов. Теоретически величина параметров <code class="highlighter-rouge">n</code> и <code class="highlighter-rouge">m</code> не
+ограничена, но рекомендуется не задавать большие значения, поскольку в
+некоторых ситуациях это может потребовать существенных затрат времени и
+ОЗУ при обработке такого повторителя в связи с рекурсивным характером
+работы.</p>
+
+<p>Если фигурные скобки встречаются в “неправильном” месте, где они не
+могут быть восприняты как повторитель, то они вопринимаются просто как
+символы.</p>
+
+<h4 id="Примеры-6">Примеры:</h4>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&nbsp;foob.*r &nbsp; &nbsp; находит 'foobar', &nbsp;'foobalkjdflkj9r' и 'foobr'
+&nbsp;foob.+r &nbsp; &nbsp; находит 'foobar', 'foobalkjdflkj9r' но не 'foobr'
+&nbsp;foob.?r &nbsp; &nbsp; находит 'foobar', 'foobbr' и 'foobr' но не 'foobalkj9r'
+&nbsp;fooba{2}r &nbsp; находит 'foobaar'
+&nbsp;fooba{2,}r находит 'foobaar', 'foobaaar', 'foobaaaar' и т.д.
+&nbsp;fooba{2,3}r находит 'foobaar', или 'foobaaar' &nbsp;но не 'foobaaaar'
+</code></pre>
+</div>
+
+<p>Небольшое пояснение по поводу “жадности”. “Жадные” варианты повторителей
+пытаются захватить как можно большую часть входного текста, в то время
+как “не жадные” - как можно меньшую. Например, <code class="highlighter-rouge">b+</code> как и <code class="highlighter-rouge">b*</code>
+примененные к входной строке <code class="highlighter-rouge">abbbbc</code> найдут <code class="highlighter-rouge">bbbb</code>, в то время как
+<code class="highlighter-rouge">b+?</code> найдет только <code class="highlighter-rouge">b</code>, а <code class="highlighter-rouge">b*?</code> - вообще - пустую строку; <code class="highlighter-rouge">b{2,3}?</code>
+найдет <code class="highlighter-rouge">bb</code>, в то время как <code class="highlighter-rouge">b{2,3}</code> найдет <code class="highlighter-rouge">bbb</code>.</p>
+
+<p>Вы можете переключить все повторители в выражении в “не жадный” режим,
+воспользовавшись <a href="http://regexpstudio.com/ru/regexp_syntax.html#modifier_g">модификатором /g</a>.</p>
+
+<h3 id="Метасимволы---варианты">Метасимволы - варианты</h3>
+
+<p>Вы можете определить перечень вариантов, используя метасимвол <code class="highlighter-rouge">|</code> для
+их разделения, например <code class="highlighter-rouge">fee|fie|foe</code> найдет <code class="highlighter-rouge">fee</code> или <code class="highlighter-rouge">fie</code> или
+<code class="highlighter-rouge">foe</code>, (так же как <code class="highlighter-rouge">f(e|i|o)e</code>). В качестве первого варианта
+воспринимается все от предыдущего метасимвола <code class="highlighter-rouge">(</code> или <code class="highlighter-rouge">[</code> или от
+начала выражения до первого метасимвола <code class="highlighter-rouge">|</code>, в качестве последнего -
+все от последнего <code class="highlighter-rouge">|</code> до конца выражения или до ближайшего метасимвола
+<code class="highlighter-rouge">)</code>. Обычно, чтобы не запутаться, набор вариантов всегда заключают в
+скобки, даже если без этого можно было бы обойтись.</p>
+
+<p>Варианты пробуются начиная с первого и попытки завершаются сразу же как
+удастся подобрать такой при котором совпадет вся последующая часть
+выражения (подробнее см.<a href="http://regexpstudio.com/ru/regexp_syntax.html#mechanism">Механизм
+работы</a>). Это означает, что варианты не
+обязательно обеспечат “жадное” поведение. Например, если применить
+выражение <code class="highlighter-rouge">foo|foot</code> ко входной строке <code class="highlighter-rouge">barefoot</code>, то будет найдено
+<code class="highlighter-rouge">foo</code> так это первый вариант который позволил совпасть всему выражению.</p>
+
+<p>Обратите внимание, что метасимвол <code class="highlighter-rouge">|</code> воспринимается как обычный символ
+внутри перечней символов, например, <code class="highlighter-rouge">[fee|fie|foe]</code> означает ровно то же
+самое что и <code class="highlighter-rouge">[feio|]</code>.</p>
+
+<h4 id="Примеры-7">Примеры:</h4>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>foo(bar|foo) находит 'foobar' или 'foofoo'.
+</code></pre>
+</div>
+
+<h3 id="Метасимволы---подвыражения">Метасимволы - подвыражения</h3>
+
+<p>Метасимволы <code class="highlighter-rouge">( ... )</code> могут также использоваться для задания подвыражений</p>
+<ul>
+  <li>по завершении поиска выражения Вы можете обратиться к любому
+подвыражению используя свойства MatchPos, MatchLen и
+<a href="http://regexpstudio.com/ru/tregexpr_interface.html#tregexpr.match">Match</a>, а также подставлять
+подвыражения в некий шаблон, используя метод
+<a href="http://regexpstudio.com/ru/tregexpr_interface.html#tregexpr.substitute">Substitute</a>).</li>
+</ul>
+
+<p>Подвыражения нумеруются слева направо, в порядке появления открывающих
+скобок.</p>
+
+<p>Первое подвыражение имеет номер <code class="highlighter-rouge">1</code> (выражение в целом - <code class="highlighter-rouge">0'</code>, к нему
+можно обращаться в
+<a href="http://regexpstudio.com/ru/tregexpr_interface.html#tregexpr.substitute">Substitute</a> как <code class="highlighter-rouge">$0'</code> так
+и <code class="highlighter-rouge">$&amp;</code>).</p>
+
+<h4 id="Примеры-8">Примеры:</h4>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&nbsp;(foobar){8,10} находит строку содержащую 8, 9 или 10 копий 'foobar'
+&nbsp;foob([0-9]|a+)r находит 'foob0r', 'foob1r' , 'foobar', 'foobaar', 'foobaar' &nbsp;и т.д.
+</code></pre>
+</div>
+
+<h3 id="Метасимволы---обратные-ссылки">Метасимволы - обратные ссылки</h3>
+
+<p>Метасимволы от <code class="highlighter-rouge">\1</code> до <code class="highlighter-rouge">\9</code> воспринимаются как обратные ссылки.
+<code class="highlighter-rouge">\&lt;n&gt;</code> совпадает с ранее найденным подвыражением <code class="highlighter-rouge">#&lt;n&gt;</code>.</p>
+
+<h4 id="Примеры-9">Примеры:</h4>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>(.)\1+ &nbsp; &nbsp; &nbsp; &nbsp; находит 'aaaa' и 'cc'.
+(.+)\1+ &nbsp; &nbsp; &nbsp; также находит 'abab' и '123123'
+(['"]?)(\d+)\1 находит "13" (в дв.кавычках), или '4' (в один.кавычках) или 77 (без кавычек) и т.д.
+</code></pre>
+</div>
+
+<h2 id="Модификаторы">Модификаторы</h2>
+
+<p>Модификаторы служат для изменения режимов работы TRegExpr.</p>
+
+<p>Вы можете изменять модификаторы несколькими способами.</p>
+
+<p>Любой модификатор может меняться с помощью специальной конструкции
+<a href="http://regexpstudio.com/ru/regexp_syntax.html#inline_modifiers">(?…)</a> внутри регулярного
+выражения.</p>
+
+<p>Также, Вы можете присвоить значение соответствующему свойству экземпляра
+объекта TRegExpr (например,
+<a href="http://regexpstudio.com/ru/tregexpr_interface.html#tregexpr.modifier_x">ModifierX</a> для изменения
+модификатора /x, или ModifierStr для изменения сразу нескольких
+модификаторов). Значения по умолчанию для новых экземпляров объектов
+TRegExpr определены в <a href="http://regexpstudio.com/ru/regexp_syntax.html#modifier_defs">глобальных
+константах</a>, например
+RegExprModifierX определяет значение по умолчанию для ModifierX.</p>
+
+<p><a name="modifier_i"></a></p>
+<h3 id="i">i</h3>
+
+<p>Регистро-независимый режим (по умолчанию использует выбранный в ОС язык
+по умолчанию), (см. также
+<a href="http://regexpstudio.com/ru/tregexpr_interface.html#invertcase">InvertCase</a>)</p>
+
+<p><a name="modifier_m"></a></p>
+<h3 id="m">m</h3>
+
+<p>Воспринимать входной текст как многострочный, при этом метасимволы <code class="highlighter-rouge">^</code>
+и <code class="highlighter-rouge">$</code> будут совпадать не только в начале и конце текста в целом, но и в
+начале и в конце всех имеющихся в тексте строк (см. также <a href="http://regexpstudio.com/ru/regexp_syntax.html#syntax_line_separators">Разделители
+строк</a>)</p>
+
+<p><a name="modifier_s"></a></p>
+<h3 id="s">s</h3>
+
+<p>Воспринимать входной текст как одну строку. При этом метасимвол <code class="highlighter-rouge">.</code>
+совпадает с любым символом, если же этот модификатор выключен, то он не
+совпадает с разделителями строк (см.также <a href="http://regexpstudio.com/ru/regexp_syntax.html#syntax_line_separators">Разделители
+строк</a>).</p>
+
+<p><a name="modifier_g"></a></p>
+<h3 id="g">g</h3>
+
+<p>Не стандартный модификатор. Выключая его Вы переключаете все повторители
+в “не жадный” режим (по умолчанию этот модификатор включен). Т.е. если
+его отключить, то все <code class="highlighter-rouge">+</code> работают как <code class="highlighter-rouge">+?</code>, <code class="highlighter-rouge">*</code> как <code class="highlighter-rouge">*?</code> и т.д.</p>
+
+<p><a name="modifier_x"></a></p>
+<h3 id="x">x</h3>
+
+<p>Позволяет форматировать шаблон чтобы обеспечить более легкую читаемость
+(см. описание ниже).</p>
+
+<p><a name="modifier_r"></a></p>
+<h3 id="r">r</h3>
+
+<p>Не стандартный модификатор. Если включен, то диапазоны вида <code class="highlighter-rouge">а-я</code> включают
+также букву <code class="highlighter-rouge">ё</code>, <code class="highlighter-rouge">А-Я</code> &nbsp;включают <code class="highlighter-rouge">Ё</code>, а <code class="highlighter-rouge">а-Я</code> включает вообще все русские
+буквы.</p>
+
+<p><a href="http://regexpstudio.com/ru/regexp_syntax.html#modifier_x">Модификатор /x</a> заставляет TRegExpr
+игнорировать пробелы, табуляции и разделители строк, что позволяет
+форматировать текст выражения. Кроме того, если встречается символ #,
+то все последующие символы до конца строки воспринимаются как
+комментарий, например:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>(
+(abc) # Комментарий 1
+ &nbsp;| &nbsp; # Пробелы внутри выражения также игнорируются
+(efg) # Комментарий 2
+)
+</code></pre>
+</div>
+
+<p>Естественно, это означает что, если Вам нужно вставить в выражение
+пробел, табуляцию или разделитель строки или <code class="highlighter-rouge">#</code>, то в расширенном (<code class="highlighter-rouge">/x</code>)
+режиме это можно сделать только предваряя их <code class="highlighter-rouge">/</code> или используя <code class="highlighter-rouge">/xnn</code>
+(внутри перечней символов все эти символы воспринимаются как обычно)</p>
+
+<h2 id="Расширения-perl">Расширения Perl</h2>
+
+<h3 id="imsxr-imsxr">(?imsxr-imsxr)</h3>
+
+<p>Позволяет изменять значения модификаторов</p>
+
+<h4 id="Примеры-10">Примеры:</h4>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&nbsp;(?i)Saint-Petersburg &nbsp; &nbsp; &nbsp; находит 'Saint-petersburg' и 'Saint-Petersburg'
+&nbsp;(?i)Saint-(?-i)Petersburg находит 'Saint-Petersburg' но не 'Saint-petersburg'
+&nbsp;(?i)(Saint-)?Petersburg &nbsp; находит 'Saint-petersburg' и 'saint-petersburg'
+&nbsp;((?i)Saint-)?Petersburg &nbsp; находит 'saint-Petersburg', но не 'saint-petersburg'
+</code></pre>
+</div>
+
+<h3 id="text">(?#text)</h3>
+
+<p>Комментарий, просто игнорируется. Обратите внимание, что в комментарии
+такого вида невозможно поместить символ <code class="highlighter-rouge">)</code>, поскольку он воспринимается
+как конец комментария.</p>
+
+<p>Не забудьте ознакомится с <a href="http://regexpstudio.com/ru/faq.html">ЧаВо</a></p>
+
+  </div>
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:anso@mail.ru"><i class="svg-icon email"></i></a>
+
+
+<a href="https://github.com/masterandrey/TRegExpr"><i class="svg-icon github"></i></a>
+
+
+
+
+<a href="https://www.twitter.com/andreyamoney"><i class="svg-icon twitter"></i></a>
+<a href="http://stackoverflow.com/users/4790975/masterandrey"><i class="svg-icon stackoverflow"></i></a>
+
+
+<a href="https://github.com/masterandrey/regexpstudio.com"><i class="svg-icon jekyll"></i></a>
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-90368520-1', 'auto');
+		ga('send', 'pageview', {
+			'page': '/ru/regexp_syntax.html',
+			'title': 'Синтаксис регулярных выражений'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter44084859 = new Ya.Metrika({
+                    id:44084859,
+                clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+            });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/44084859" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+  
+
+</body></html>

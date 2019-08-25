@@ -1,0 +1,12 @@
+AddDefaultCharset utf-8
+#кодировка
+
+RewriteEngine on
+#включаем перенаправление
+
+RewriteBase /
+#записываем базовую директрию нашего сайта
+
+RewriteRule ^(.*)$ index.php
+# перенаправляем все запросы на index.php
+
