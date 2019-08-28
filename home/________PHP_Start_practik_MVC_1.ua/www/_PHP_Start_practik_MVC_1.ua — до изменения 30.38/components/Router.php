@@ -38,14 +38,9 @@ private function getURI() {
   if (preg_match("~$uriPattern~", $uri)){
   	//$uri - строка запроса
   	//$uriPattern - данные с наших роутов
-  	//Если совпадение есть
-    
-  //Получаем внутренний путь из внешнего солгасно правилу
-    $internalRoute = preg_replace("~$uriPattern~", $path, $uri);
-
-  //Определить Контроллер, Екшен, Параметры
-
-    $segments = explode('/', $internalRoute);
+  	
+  //Если совпадение есть - определить какой контроллер и какой action обрабатывает запрос
+    $segments = explode('/', $path);
 
     //определить, какой контроллер обр. запрос
     $controllerName = array_shift($segments) . 'Controller';
@@ -55,16 +50,6 @@ private function getURI() {
 
     //определить, какой action обр. запрос
     $actionName = 'action' . ucfirst(array_shift($segments));
-
-    echo '<br>controller name: ' .$controllerName;
-    echo '<br>action name: ' .$actionName;
-    $parameters = $segments;
-      echo '<pre>';
-      print_r($parameters);
-
-
-
-      die;
 
       //подключить файл Класса-контроллера
       $controllerFile = ROOT . '/controllers/' . $controllerName . '.php';
