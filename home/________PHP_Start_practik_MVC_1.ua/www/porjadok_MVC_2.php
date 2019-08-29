@@ -129,4 +129,49 @@ $_GTE['category']
  вырезать 2 параметра "sport/114" и подставить на места ссылок "$1/$2" - для того, чтоб передать их на нужный Екшен с помощью ф-ции preg_replace()
  $internalRoute = preg_replace("~$uriPattern~", $path, $uri);
 В нашем запросе в строке запроса "news/sport/114" ищем параметры "sport" и "114" по шаблону "~$uriPattern~", кот. нах. в роутах и равен "([a-z]+)/([0-9]+)".
-Если находим ети параметры (совпадения) - то в строку $path, кот. = "$1/$2" (из роутов), - подставляем ети парам. В итоге получим т.наз. 'Внутренний маршрут' - $internalRoute.
+Если находим ети параметры = совпадения, - то в строку $path, кот. = "$1/$2" (из роутов), - подставляем ети парам. В итоге получим т.наз. 'Внутренний маршрут' - $internalRoute.
+2-й - после определения 'внутреннего пути', можем определить Контроллер, Екшен и Параметры.
+Контроллер и Екшен определяем с помощью старого кода.
+Далее в массиве $segments после array_shift($segments) остануться только 'параметры', 
+
+
+  public function run() {
+   $uri = $this->getURI();
+  foreach ($this->routes as $uriPattern => $path) {
+  if (preg_match("~$uriPattern~", $uri)){
+    //$uri - строка запроса
+    //$uriPattern - данные с наших роутов
+    //Если совпадение есть
+    
+  //Получаем внутренний путь из внешнего солгасно правилу
+    $internalRoute = preg_replace("~$uriPattern~", $path, $uri);
+
+  //Определить Контроллер, Екшен, Параметры
+
+    $segments = explode('/', $internalRoute);
+
+    //определить, какой контроллер обр. запрос
+    $controllerName = array_shift($segments) . 'Controller';
+    //ф-я array_shift() удаляет первый елемент массива (с нашего пути) + добавляем слово Controller
+    $controllerName = ucfirst($controllerName);
+    //1-я буква имени контролера станет большой
+
+    //определить, какой action обр. запрос
+    $actionName = 'action' . ucfirst(array_shift($segments));
+    echo '<br>controller name: ' .$controllerName;
+    echo '<br>action name: ' .$actionName;
+    $parameters = $segments;
+      echo '<pre>';
+      print_r($parameters);
+      die;
+
+Введем: '/news/sport/114'
+Выведет:
+'controller name: NewsController
+action name: actionView
+Array
+(
+    [0] => sport
+    [1] => 114
+)'
+'Array([0] => sport [1] => 114)' - Параметры ,переданные в строку запроса
